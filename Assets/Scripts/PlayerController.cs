@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator anim;
     private Rigidbody2D rb;
 
     [Header("Movement")]
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         moveAction.action.performed += OnMovePerformed;
         moveAction.action.canceled += OnMoveCanceled;
         // rolar
+        rollAction.action.Enable();
         rollAction.action.performed += OnRollPerformed;
         // ataque melee
         attackAction.action.performed += OnAttackPerformed;
@@ -90,6 +92,7 @@ public class PlayerController : MonoBehaviour
         moveAction.action.performed -= OnMovePerformed;
         moveAction.action.canceled -= OnMoveCanceled;
         // rolar
+        rollAction.action.Disable();
         rollAction.action.performed -= OnRollPerformed;
         // ataque melee
         attackAction.action.performed -= OnAttackPerformed;
@@ -104,6 +107,12 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
         lastMoveDir = moveInput;
+
+        if (moveInput != Vector2.zero)
+        {
+            anim.SetFloat("XInput", moveInput.x);
+            anim.SetFloat("YInput", moveInput.y);
+        }
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
@@ -115,10 +124,10 @@ public class PlayerController : MonoBehaviour
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
         Debug.Log($"[ROLL PRESSED] rollTimer={rollTimer}, isRolling={isRolling}");
-        if (rollTimer <= 0f) // só deixa rolar quando o timer zerar
+        if (rollTimer <= 0f) // sï¿½ deixa rolar quando o timer zerar
         {
             Debug.Log("[ROLL STARTED]");
-            // pega direção atual ou última direção válida
+            // pega direï¿½ï¿½o atual ou ï¿½ltima direï¿½ï¿½o vï¿½lida
             if (moveInput.sqrMagnitude > 0.1f)
             {
                 rollDirection = moveInput.normalized;
@@ -131,7 +140,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                rollDirection = Vector2.right; // fallback caso jogo recém iniciado
+                rollDirection = Vector2.right; // fallback caso jogo recï¿½m iniciado
             }
 
             isRolling = true;
