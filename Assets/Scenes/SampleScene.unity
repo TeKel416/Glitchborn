@@ -1864,11 +1864,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-<<<<<<< Updated upstream
   orthographic size: 11.292365
-=======
-  orthographic size: 2.9453125
->>>>>>> Stashed changes
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2226,7 +2222,6 @@ GameObject:
   - component: {fileID: 1172932057}
   - component: {fileID: 1172932060}
   - component: {fileID: 1172932059}
-  - component: {fileID: 1172932062}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2281,12 +2276,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3562281224590061358, guid: b5b63fffec189db418486534866416fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: -1721109504, guid: 1311e614a7df71e4dbab93d7f1980626, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.27}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2372,8 +2367,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.875, y: 1.6875}
-    newSize: {x: 0.64, y: 0.27}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2392,7 +2387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71342f6c93c2344494f1d769a3949e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1172932062}
   speed: 5
   rollSpeed: 15
   rollDuration: 0.25
@@ -2402,28 +2396,6 @@ MonoBehaviour:
   attackAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   shootAction: {fileID: 5786043969374441292, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   hackAction: {fileID: -5483256228849666532, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
---- !u!95 &1172932062
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172932056}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7025d9ee6501adc459afb37c14b947c6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1547994429
 GameObject:
   m_ObjectHideFlags: 0
