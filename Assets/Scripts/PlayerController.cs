@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    private Animator animator;
+
     [Header("Movement")]
     public float speed;
 
@@ -31,14 +33,11 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (rollAction.action.triggered)
-        {
-            Debug.Log("[ROLL TRIGGER DETECTED]");
-        }
         if (rollTimer > 0f)
         {
             rollTimer -= Time.deltaTime;
@@ -104,21 +103,27 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
         lastMoveDir = moveInput;
+
+        if (moveInput != Vector2.zero)
+        {
+            animator.SetFloat("XInput", moveInput.x);
+            animator.SetFloat("YInput", moveInput.y);
+            animator.SetBool("IsWalking", true);
+        }        
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
+        animator.SetBool("IsWalking", false);
     }
 
     // rolar
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log($"[ROLL PRESSED] rollTimer={rollTimer}, isRolling={isRolling}");
-        if (rollTimer <= 0f) // só deixa rolar quando o timer zerar
+        if (rollTimer <= 0f) // sï¿½ deixa rolar quando o timer zerar
         {
-            Debug.Log("[ROLL STARTED]");
-            // pega direção atual ou última direção válida
+            // pega direï¿½ï¿½o atual ou ï¿½ltima direï¿½ï¿½o vï¿½lida
             if (moveInput.sqrMagnitude > 0.1f)
             {
                 rollDirection = moveInput.normalized;
@@ -131,7 +136,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                rollDirection = Vector2.right; // fallback caso jogo recém iniciado
+                rollDirection = Vector2.right; // fallback caso jogo recï¿½m iniciado
             }
 
             isRolling = true;
