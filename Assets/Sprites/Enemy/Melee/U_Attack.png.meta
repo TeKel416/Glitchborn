@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: d7a2f4368a4767d4d9ccc49b7fc403b0
+guid: 35387e85e4f82c54d9a91ac891d6eea0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3894874152493566543
-    second: Mummy_attack_0
+      213: 1141507576257404470
+    second: U_Attack_0
   - first:
-      213: 601303120412384226
-    second: Mummy_attack_1
+      213: -3734870948308113695
+    second: U_Attack_1
   - first:
-      213: 3415376048139568515
-    second: Mummy_attack_2
+      213: 1234770721424068583
+    second: U_Attack_2
   - first:
-      213: 1869135695181477425
-    second: Mummy_attack_3
+      213: 8380758791837961270
+    second: U_Attack_3
   - first:
-      213: -1249056521801862804
-    second: Mummy_attack_4
+      213: 7943277510102470336
+    second: U_Attack_4
   - first:
-      213: 6605269743837624653
-    second: Mummy_attack_5
+      213: 4510311544703605350
+    second: U_Attack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mummy_attack_0
+      name: U_Attack_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 30
-        height: 34
+        x: 35
+        y: 19
+        width: 26
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b535cf1890a2f9c0800000000000000
-      internalID: -3894874152493566543
+      spriteID: 63e5d37b71377df00800000000000000
+      internalID: 1141507576257404470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_attack_1
+      name: U_Attack_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 0
-        width: 30
-        height: 37
+        x: 131
+        y: 19
+        width: 26
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2eb938e8002485800800000000000000
-      internalID: 601303120412384226
+      spriteID: 1e62b2429a21b2cc0800000000000000
+      internalID: -3734870948308113695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_attack_2
+      name: U_Attack_2
       rect:
         serializedVersion: 2
-        x: 122
-        y: 0
-        width: 22
-        height: 46
+        x: 227
+        y: 19
+        width: 26
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3858cbb9b6ad56f20800000000000000
-      internalID: 3415376048139568515
+      spriteID: 7efc885dd69c22110800000000000000
+      internalID: 1234770721424068583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_attack_3
+      name: U_Attack_3
       rect:
         serializedVersion: 2
-        x: 148
-        y: 0
-        width: 42
-        height: 41
+        x: 323
+        y: 19
+        width: 26
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1367b4cf20180f910800000000000000
-      internalID: 1869135695181477425
+      spriteID: 63ccbbfc7bf6e4470800000000000000
+      internalID: 8380758791837961270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_attack_4
+      name: U_Attack_4
       rect:
         serializedVersion: 2
-        x: 199
-        y: 0
-        width: 38
-        height: 32
+        x: 419
+        y: 21
+        width: 26
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c617d9116b57aaee0800000000000000
-      internalID: -1249056521801862804
+      spriteID: 0cec1066fc03c3e60800000000000000
+      internalID: 7943277510102470336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_attack_5
+      name: U_Attack_5
       rect:
         serializedVersion: 2
-        x: 251
-        y: 0
-        width: 34
-        height: 33
+        x: 515
+        y: 20
+        width: 26
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +253,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d49b317f5d1aaab50800000000000000
-      internalID: 6605269743837624653
+      spriteID: 66ad6680478d79e30800000000000000
+      internalID: 4510311544703605350
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mummy_attack_0: -3894874152493566543
-      Mummy_attack_1: 601303120412384226
-      Mummy_attack_2: 3415376048139568515
-      Mummy_attack_3: 1869135695181477425
-      Mummy_attack_4: -1249056521801862804
-      Mummy_attack_5: 6605269743837624653
+      U_Attack_0: 1141507576257404470
+      U_Attack_1: -3734870948308113695
+      U_Attack_2: 1234770721424068583
+      U_Attack_3: 8380758791837961270
+      U_Attack_4: 7943277510102470336
+      U_Attack_5: 4510311544703605350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

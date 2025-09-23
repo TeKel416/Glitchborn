@@ -149,10 +149,6 @@ public class PlayerController : MonoBehaviour
             isRolling = true;
             rollTimer = rollDuration + rollCooldown;
         }
-        else
-        {
-            Debug.Log("[ROLL BLOCKED] ainda em cooldown");
-        }
     }
 
     // ataque melee

@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 7ae15a30eee3a9944ab60ae91874e542
+guid: 5a6e67932a66d684594cd7ba31c6ce7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4514930162336941006
-    second: Mummy_walk_0
+      213: 3586477459529719684
+    second: D_Run_0
   - first:
-      213: -7164068209308522427
-    second: Mummy_walk_1
+      213: 1353034469934709549
+    second: D_Run_1
   - first:
-      213: -7038169182021413081
-    second: Mummy_walk_2
+      213: 914820690653652844
+    second: D_Run_2
   - first:
-      213: -8274203646227901515
-    second: Mummy_walk_3
+      213: 2668442215837781975
+    second: D_Run_3
   - first:
-      213: 5103462260598953079
-    second: Mummy_walk_4
+      213: 1753079619126800289
+    second: D_Run_4
   - first:
-      213: -6808576766911531287
-    second: Mummy_walk_5
+      213: 7934358380472627901
+    second: D_Run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,57 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mummy_walk_0
+      name: D_Run_0
       rect:
         serializedVersion: 2
-        x: 25
-        y: 0
-        width: 20
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23cb53040feb751c0800000000000000
-      internalID: -4514930162336941006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mummy_walk_1
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 0
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5482f75abed149c90800000000000000
-      internalID: -7164068209308522427
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mummy_walk_2
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 0
+        x: 36
+        y: 27
         width: 24
-        height: 36
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,42 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72713843b66635e90800000000000000
-      internalID: -7038169182021413081
+      spriteID: 48fd63a5f3ab5c130800000000000000
+      internalID: 3586477459529719684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_walk_3
+      name: D_Run_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 30
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b318535f9f1c2d80800000000000000
-      internalID: -8274203646227901515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mummy_walk_4
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 0
+        x: 132
+        y: 28
         width: 24
-        height: 35
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 774dc9ff2e323d640800000000000000
-      internalID: 5103462260598953079
+      spriteID: d2b31558ea1f6c210800000000000000
+      internalID: 1353034469934709549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_walk_5
+      name: D_Run_2
       rect:
         serializedVersion: 2
-        x: 263
-        y: 0
-        width: 20
-        height: 36
+        x: 228
+        y: 27
+        width: 24
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +187,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e6b24ef0831381a0800000000000000
-      internalID: -6808576766911531287
+      spriteID: c67a69b329812bc00800000000000000
+      internalID: 914820690653652844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Run_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 28
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dfcaaaae06380520800000000000000
+      internalID: 2668442215837781975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Run_4
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 27
+        width: 26
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afa70910a0345810800000000000000
+      internalID: 1753079619126800289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Run_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 27
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2f6b4b8e08c1e60800000000000000
+      internalID: 7934358380472627901
       vertices: []
       indices: 
       edges: []
@@ -273,12 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mummy_walk_0: -4514930162336941006
-      Mummy_walk_1: -7164068209308522427
-      Mummy_walk_2: -7038169182021413081
-      Mummy_walk_3: -8274203646227901515
-      Mummy_walk_4: 5103462260598953079
-      Mummy_walk_5: -6808576766911531287
+      D_Run_0: 3586477459529719684
+      D_Run_1: 1353034469934709549
+      D_Run_2: 914820690653652844
+      D_Run_3: 2668442215837781975
+      D_Run_4: 1753079619126800289
+      D_Run_5: 7934358380472627901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 36131127d29ca3348ad325b8deb76d71
+guid: 3becc55c6d6005044a15adfd7c52dc16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7766122936939830323
-    second: Mummy_hurt_0
+      213: 7057370018629194418
+    second: U_Run_0
   - first:
-      213: 8144114960958464020
-    second: Mummy_hurt_1
+      213: 746670123327643073
+    second: U_Run_1
+  - first:
+      213: 826235081221321443
+    second: U_Run_2
+  - first:
+      213: -533721644366314032
+    second: U_Run_3
+  - first:
+      213: -8524199241024579403
+    second: U_Run_4
+  - first:
+      213: 8180576116831645670
+    second: U_Run_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mummy_hurt_0
+      name: U_Run_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 31
-        height: 35
+        x: 35
+        y: 18
+        width: 26
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33cdf4a1aafc6cb60800000000000000
-      internalID: 7766122936939830323
+      spriteID: 2b292e0f3a0d0f160800000000000000
+      internalID: 7057370018629194418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_hurt_1
+      name: U_Run_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 0
-        width: 29
-        height: 34
+        x: 130
+        y: 18
+        width: 28
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +165,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 410afd95865b50170800000000000000
-      internalID: 8144114960958464020
+      spriteID: 1cd57596584bc5a00800000000000000
+      internalID: 746670123327643073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: U_Run_2
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 19
+        width: 26
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2b925cd60677b00800000000000000
+      internalID: 826235081221321443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: U_Run_3
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 20
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d5cb920ef6d798f0800000000000000
+      internalID: -533721644366314032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: U_Run_4
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 20
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8531414f5f3b980800000000000000
+      internalID: -8524199241024579403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: U_Run_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 19
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef6bcdb2ae378170800000000000000
+      internalID: 8180576116831645670
       vertices: []
       indices: 
       edges: []
@@ -173,8 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mummy_hurt_0: 7766122936939830323
-      Mummy_hurt_1: 8144114960958464020
+      U_Run_0: 7057370018629194418
+      U_Run_1: 746670123327643073
+      U_Run_2: 826235081221321443
+      U_Run_3: -533721644366314032
+      U_Run_4: -8524199241024579403
+      U_Run_5: 8180576116831645670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

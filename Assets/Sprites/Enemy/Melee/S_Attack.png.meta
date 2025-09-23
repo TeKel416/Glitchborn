@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 0ae0a0dda420f4445bec440e9f9d44d0
+guid: aee53313bab838445a9819dc1e885220
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2167878223180609541
-    second: Mummy_idle_0
+      213: 344823416570820019
+    second: S_Attack_0
   - first:
-      213: -7860956130040113990
-    second: Mummy_idle_1
+      213: -9145600624152048394
+    second: S_Attack_1
   - first:
-      213: 2818871451065359792
-    second: Mummy_idle_2
+      213: -2755872741612164143
+    second: S_Attack_2
   - first:
-      213: -4507263900313198035
-    second: Mummy_idle_3
+      213: -8984167441334365923
+    second: S_Attack_3
+  - first:
+      213: 7473504709426922012
+    second: S_Attack_4
+  - first:
+      213: 8892989460813222061
+    second: S_Attack_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mummy_idle_0
+      name: S_Attack_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 30
-        height: 34
+        x: 23
+        y: 31
+        width: 63
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf7c30fed362ae1e0800000000000000
-      internalID: -2167878223180609541
+      spriteID: 3b5b0f6021f09c400800000000000000
+      internalID: 344823416570820019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_idle_1
+      name: S_Attack_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 0
-        width: 32
-        height: 35
+        x: 120
+        y: 31
+        width: 62
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab497028c0648e290800000000000000
-      internalID: -7860956130040113990
+      spriteID: 6fc83d310bc441180800000000000000
+      internalID: -9145600624152048394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_idle_2
+      name: S_Attack_2
       rect:
         serializedVersion: 2
-        x: 113
-        y: 0
-        width: 30
-        height: 35
+        x: 217
+        y: 31
+        width: 61
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bd9d3456a4ae1720800000000000000
-      internalID: 2818871451065359792
+      spriteID: 1db660eb75c21c9d0800000000000000
+      internalID: -2755872741612164143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mummy_idle_3
+      name: S_Attack_3
       rect:
         serializedVersion: 2
-        x: 162
-        y: 0
-        width: 29
-        height: 34
+        x: 313
+        y: 31
+        width: 61
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d22e3e8fc5bf271c0800000000000000
-      internalID: -4507263900313198035
+      spriteID: d1192a0ff43d15380800000000000000
+      internalID: -8984167441334365923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 31
+        width: 67
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12c998dfe837b760800000000000000
+      internalID: 7473504709426922012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: S_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 31
+        width: 66
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0901b2cce3a6b70800000000000000
+      internalID: 8892989460813222061
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Mummy_idle_0: -2167878223180609541
-      Mummy_idle_1: -7860956130040113990
-      Mummy_idle_2: 2818871451065359792
-      Mummy_idle_3: -4507263900313198035
+      S_Attack_0: 344823416570820019
+      S_Attack_1: -9145600624152048394
+      S_Attack_2: -2755872741612164143
+      S_Attack_3: -8984167441334365923
+      S_Attack_4: 7473504709426922012
+      S_Attack_5: 8892989460813222061
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
