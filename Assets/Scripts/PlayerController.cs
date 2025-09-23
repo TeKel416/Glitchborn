@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMoveDir;
     private bool isRolling = false;
     private float rollTimer;
-    private float nextRollTime;
 
     [Header("Actions")]
     public InputActionReference moveAction;
@@ -73,12 +72,16 @@ public class PlayerController : MonoBehaviour
         moveAction.action.performed += OnMovePerformed;
         moveAction.action.canceled += OnMoveCanceled;
         // rolar
+        rollAction.action.Enable();
         rollAction.action.performed += OnRollPerformed;
         // ataque melee
+        attackAction.action.Enable();
         attackAction.action.performed += OnAttackPerformed;
         // tiro
+        shootAction.action.Enable();
         shootAction.action.performed += OnShootPerformed;
         // hack
+        hackAction.action.Enable();
         hackAction.action.performed += OnHackPerformed;
     }
 
@@ -89,12 +92,16 @@ public class PlayerController : MonoBehaviour
         moveAction.action.performed -= OnMovePerformed;
         moveAction.action.canceled -= OnMoveCanceled;
         // rolar
+        rollAction.action.Disable();
         rollAction.action.performed -= OnRollPerformed;
         // ataque melee
+        attackAction.action.Disable();
         attackAction.action.performed -= OnAttackPerformed;
         // tiro
+        shootAction.action.Disable();
         shootAction.action.performed -= OnShootPerformed;
         // hack
+        hackAction.action.Disable();
         hackAction.action.performed -= OnHackPerformed;
     }
 
