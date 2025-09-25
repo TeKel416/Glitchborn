@@ -4,8 +4,12 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
-
     private Animator animator;
+    private bool locked = false;
+
+    [Header("Health")]
+    public float hp = 3;
+    public float getHitDelay = 0.5f;
 
     [Header("Movement")]
     public float speed;
@@ -21,6 +25,13 @@ public class PlayerController : MonoBehaviour
     private Vector2 lastMoveDir;
     private bool isRolling = false;
     private float rollTimer;
+
+    [Header("Attack")]
+    public float attackRange = 1.5f;
+    public float attackDelay = 1f;
+    public Transform attackPoint;
+    public float damage = 1;
+    public float dealDamageDelay = 0.25f;
 
     [Header("Actions")]
     public InputActionReference moveAction;
@@ -39,16 +50,17 @@ public class PlayerController : MonoBehaviour
     {
         if (rollTimer > 0f)
         {
-            rollTimer -= Time.deltaTime;
 
-            if (isRolling && rollTimer <= rollCooldown)
-            {
-                isRolling = false; // saiu do roll, entra no cooldown
-            }
+            rollTimer -= Time.deltaTime;
 
             if (rollTimer <= 0f)
             {
                 rollTimer = 0f; // corrige rollTimer caso ele fique negativo
+            }
+
+            if (isRolling && rollTimer <= rollCooldown)
+            {
+                isRolling = false; // saiu do roll, entra no cooldown
             }
         }
     }
@@ -108,15 +120,18 @@ public class PlayerController : MonoBehaviour
     // mover
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
-        lastMoveDir = moveInput;
-
-        if (moveInput != Vector2.zero)
+        if (!locked)
         {
-            animator.SetFloat("XInput", moveInput.x);
-            animator.SetFloat("YInput", moveInput.y);
-            animator.SetBool("IsWalking", true);
-        }        
+            moveInput = context.ReadValue<Vector2>();
+            lastMoveDir = moveInput;
+
+            if (moveInput != Vector2.zero)
+            {
+                animator.SetFloat("XInput", moveInput.x);
+                animator.SetFloat("YInput", moveInput.y);
+                animator.SetBool("IsWalking", true);
+            } 
+        }       
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
@@ -128,33 +143,78 @@ public class PlayerController : MonoBehaviour
     // rolar
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
-        if (rollTimer <= 0f) // s� deixa rolar quando o timer zerar
+        if (!locked)
         {
-            // pega dire��o atual ou �ltima dire��o v�lida
-            if (moveInput.sqrMagnitude > 0.1f)
+            if (rollTimer <= 0f) // so deixa rolar quando o timer zerar
             {
-                rollDirection = moveInput.normalized;
+                // pega direcao atual ou ultima direcao valida
+                if (moveInput.sqrMagnitude > 0.1f)
+                {
+                    rollDirection = moveInput.normalized;
 
-            }
-            else if (lastMoveDir != Vector2.zero)
-            {
-                rollDirection = lastMoveDir; // fallback caso parado
+                }
+                else if (lastMoveDir != Vector2.zero)
+                {
+                    rollDirection = lastMoveDir; // fallback caso parado
 
-            }
-            else
-            {
-                rollDirection = Vector2.right; // fallback caso jogo rec�m iniciado
-            }
+                }
+                else
+                {
+                    rollDirection = Vector2.right; // fallback caso jogo recem iniciado
+                }
 
-            isRolling = true;
-            rollTimer = rollDuration + rollCooldown;
+                locked = true;
+                CancelInvoke("Unlock");
+                Invoke("Unlock", rollDuration);
+                isRolling = true;
+                rollTimer = rollDuration + rollCooldown;
+            }
         }
     }
 
     // ataque melee
     private void OnAttackPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("ataque melee executado");
+        if (!locked)
+        {
+            Debug.Log("ataque melee executado");
+            animator.SetBool("IsWalking", false);
+            //anim.SetTrigger("Attack");
+            locked = true;
+
+            CancelInvoke("Unlock");
+            Invoke("Unlock", attackDelay);
+
+            CancelInvoke("DealDamage");
+            Invoke("DealDamage", dealDamageDelay);
+        }
+    }
+
+    private void DealDamage()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        for (int i = 0; i < hits.Length; i++)
+        {
+            if (hits[i].CompareTag("Enemy"))
+            {
+                hits[i].GetComponent<EnemyMeleeController>().EnterGetHit(damage);
+            }
+        }
+    }
+
+    // tomar dano
+    public void EnterGetHit(float dealtDamage)
+    {
+        Debug.Log("player ai");
+        //tocar animacao de hit
+        locked = true;
+        hp -= dealtDamage;
+        if (hp <= 0)
+        {
+            Destroy(gameObject);
+        }
+        CancelInvoke("Unlock");
+        Invoke("Unlock", getHitDelay);
     }
 
     // tiro
@@ -168,4 +228,6 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("hack executado");
     }
+
+    void Unlock() => locked = false;
 }
