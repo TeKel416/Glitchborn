@@ -50,31 +50,33 @@ public class PlayerController : MonoBehaviour
     {
         if (rollTimer > 0f)
         {
-
             rollTimer -= Time.deltaTime;
-
-            if (rollTimer <= 0f)
-            {
-                rollTimer = 0f; // corrige rollTimer caso ele fique negativo
-            }
 
             if (isRolling && rollTimer <= rollCooldown)
             {
                 isRolling = false; // saiu do roll, entra no cooldown
             }
+        } 
+        else
+        {
+            rollTimer = 0f; // corrige rollTimer caso ele fique negativo
         }
     }
 
     private void FixedUpdate()
     {
-        if (isRolling)
+        if (!locked)
         {
-            rb.linearVelocity = rollDirection * rollSpeed;
+            if (isRolling) // rolamento
+            {
+                rb.linearVelocity = rollDirection * rollSpeed;
+            }
+            else // andar
+            {
+                rb.linearVelocity = moveInput * speed;
+            }
         }
-        else
-        {
-            rb.linearVelocity = moveInput * speed;
-        }
+        
     }
 
     private void OnEnable()
