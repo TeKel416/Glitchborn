@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab8b506997744a4db452c281666565f, type: 3}
+  m_Name: NPC 1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSettings
+  actor: {fileID: 4954645147545435841, guid: 14abf420b1b1f584a8dfba1de600fea4, type: 3}
+  speakerSprite: {fileID: 2838911944299815075, guid: a9ca1a8a783f0c6498e21836362a11f2, type: 3}
+  sentence: Ei, baitola!
+  dialogues: []
