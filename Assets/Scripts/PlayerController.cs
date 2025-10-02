@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
 
     [Header("Roll / Dodge")]
-    public float rollSpeed;
     public float rollDuration;
     public float rollCooldown;
 
@@ -32,6 +31,10 @@ public class PlayerController : MonoBehaviour
     public Transform attackPoint;
     public float damage = 1;
     public float dealDamageDelay = 0.25f;
+    
+    [Header("VFXs")]
+    public GameObject hitVFX;
+    public GameObject rollVFX;
 
     [Header("Actions")]
     public InputActionReference moveAction;
@@ -65,18 +68,23 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!locked)
+        if (isRolling) // rolamento
         {
-            if (isRolling) // rolamento
-            {
-                rb.linearVelocity = rollDirection * rollSpeed;
-            }
-            else // andar
+            rb.linearVelocity = rollDirection * (speed * 3);
+        }
+        else // andar
+        {
+            if (!locked)
             {
                 rb.linearVelocity = moveInput * speed;
+                animator.SetBool("IsWalking", true);
+                if (rb.linearVelocity == Vector2.zero)
+                {
+                    animator.SetBool("IsWalking", false);
+                }
             }
+            
         }
-        
     }
 
     private void OnEnable()
@@ -131,7 +139,6 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetFloat("XInput", moveInput.x);
                 animator.SetFloat("YInput", moveInput.y);
-                animator.SetBool("IsWalking", true);
             } 
         }       
     }
@@ -145,32 +152,31 @@ public class PlayerController : MonoBehaviour
     // rolar
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
-        if (!locked)
+        if (!locked && rollTimer <= 0f) // so deixa rolar quando o timer zerar
         {
-            if (rollTimer <= 0f) // so deixa rolar quando o timer zerar
+            // pega direcao atual ou ultima direcao valida
+            if (moveInput.sqrMagnitude > 0.1f)
             {
-                // pega direcao atual ou ultima direcao valida
-                if (moveInput.sqrMagnitude > 0.1f)
-                {
-                    rollDirection = moveInput.normalized;
+                rollDirection = moveInput.normalized;
 
-                }
-                else if (lastMoveDir != Vector2.zero)
-                {
-                    rollDirection = lastMoveDir; // fallback caso parado
-
-                }
-                else
-                {
-                    rollDirection = Vector2.right; // fallback caso jogo recem iniciado
-                }
-
-                locked = true;
-                CancelInvoke("Unlock");
-                Invoke("Unlock", rollDuration);
-                isRolling = true;
-                rollTimer = rollDuration + rollCooldown;
             }
+            else if (lastMoveDir != Vector2.zero)
+            {
+                rollDirection = lastMoveDir; // fallback caso parado
+
+            }
+            else
+            {
+                rollDirection = Vector2.right; // fallback caso jogo recem iniciado
+            }
+
+            locked = true;
+            isRolling = true;
+            Instantiate(rollVFX, transform.position, transform.rotation);
+            rollTimer = rollDuration + rollCooldown;
+
+            CancelInvoke("Unlock");
+            Invoke("Unlock", rollDuration);
         }
     }
 
@@ -179,10 +185,12 @@ public class PlayerController : MonoBehaviour
     {
         if (!locked)
         {
-            Debug.Log("ataque melee executado");
             animator.SetBool("IsWalking", false);
             //anim.SetTrigger("Attack");
             locked = true;
+            rb.linearVelocity = Vector2.zero;
+
+            Instantiate(hitVFX, attackPoint.position, attackPoint.rotation);
 
             CancelInvoke("Unlock");
             Invoke("Unlock", attackDelay);
@@ -210,11 +218,14 @@ public class PlayerController : MonoBehaviour
         Debug.Log("player ai");
         //tocar animacao de hit
         locked = true;
+        rb.linearVelocity = Vector2.zero;
         hp -= dealtDamage;
+
         if (hp <= 0)
         {
             Destroy(gameObject);
         }
+
         CancelInvoke("Unlock");
         Invoke("Unlock", getHitDelay);
     }
