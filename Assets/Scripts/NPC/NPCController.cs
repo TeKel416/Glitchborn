@@ -10,6 +10,9 @@ public class NPCController : MonoBehaviour
     public Transform[] patrolPoints;
     private int currentPatrolPoint = 0;
 
+    [Header("Idle Duration")]
+    public float idleDuration = 1.5f;
+
     private enum NPCStates { Patrol, Idle, Talking }
     private NPCStates state = NPCStates.Patrol;
 
@@ -56,7 +59,7 @@ public class NPCController : MonoBehaviour
     {
         agent.isStopped = true;
         anim.SetBool("IsWalking", false);
-        Invoke("Patrol", 3f);
+        Invoke("Patrol", idleDuration);
     }
 
     void TalkingUpdate()
