@@ -14,11 +14,9 @@ public class DialogueController : MonoBehaviour
     public float typingSpeed; // tempo para escrever as letras da fala
 
     #region Variaveis de Controle
-
     private bool isShowing; // visibilidade da janela
     private int index; // index das falas
     private string[] sentences;
-
     #endregion
 
     public static DialogueController instance;
@@ -35,6 +33,18 @@ public class DialogueController : MonoBehaviour
         {
             speechText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
+        }
+    }
+
+    // chamar a fala
+    public void Speak(string[] txt)
+    {
+        if (!isShowing)
+        {
+            dialogueObj.SetActive(true);
+            sentences = txt;
+            StartCoroutine(TypeSentence());
+            isShowing = true;
         }
     }
 
@@ -56,18 +66,6 @@ public class DialogueController : MonoBehaviour
                 dialogueObj.SetActive(false);
                 sentences = null;
             }
-        }
-    }
-
-    // chamar a fala
-    public void Speak(string[] txt)
-    {
-        if (!isShowing)
-        {
-            dialogueObj.SetActive(true);
-            sentences = txt;
-            StartCoroutine(TypeSentence());
-            isShowing = true;
         }
     }
 }
