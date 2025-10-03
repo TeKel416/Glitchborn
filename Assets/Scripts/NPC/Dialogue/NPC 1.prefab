@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2863558219226546403}
   - component: {fileID: 5528960345882982781}
   - component: {fileID: 8741074820173475822}
-  - component: {fileID: 3622610259567576232}
   - component: {fileID: 382748015083341268}
   - component: {fileID: 6981619897306833507}
   - component: {fileID: 7084023460913950774}
@@ -53,6 +52,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  dialogue: {fileID: 11400000, guid: 1533bb6fecbae61479d0761b581f05ce, type: 2}
 --- !u!114 &8741074820173475822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,22 +70,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &3622610259567576232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4954645147545435841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fda289c280b1f6d4aa1c9291cebd28d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  dialogueRange: 2
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 256
+  idleDuration: 1.5
 --- !u!212 &382748015083341268
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class NPCController : MonoBehaviour
     public float idleDuration = 1.5f;
 
     private enum NPCStates { Patrol, Idle, Talking }
-    private NPCStates state = NPCStates.Patrol;
+    private NPCStates state = NPCStates.Idle;
 
 
     void Start()
@@ -59,7 +59,7 @@ public class NPCController : MonoBehaviour
     {
         agent.isStopped = true;
         anim.SetBool("IsWalking", false);
-        Invoke("Patrol", idleDuration);
+        //Invoke("Patrol", idleDuration);
     }
 
     void TalkingUpdate()

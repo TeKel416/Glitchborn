@@ -13,6 +13,16 @@ MonoBehaviour:
   m_Name: NPC 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSettings
   actor: {fileID: 4954645147545435841, guid: 14abf420b1b1f584a8dfba1de600fea4, type: 3}
-  speakerSprite: {fileID: 2838911944299815075, guid: a9ca1a8a783f0c6498e21836362a11f2, type: 3}
-  sentence: Ei, baitola!
-  dialogues: []
+  speakerSprite: {fileID: 0}
+  sentence: 
+  dialogues:
+  - actorName: NPC
+    profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
+    sentence:
+      portuguese: "Ei, voc\xEA a\xED!"
+      english: 
+  - actorName: NPC
+    profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
+    sentence:
+      portuguese: "Me d\xE1 um dinheiro a\xED!"
+      english: 

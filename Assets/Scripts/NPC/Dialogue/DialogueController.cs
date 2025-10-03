@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class DialogueController : MonoBehaviour
     public Text actorNameText; // nome do npc
 
     [Header("Settings")]
-    public float typingSpeed; // velocidade da fala
+    public float typingSpeed; // tempo para escrever as letras da fala
 
     #region Variaveis de Controle
 
@@ -22,6 +21,13 @@ public class DialogueController : MonoBehaviour
 
     #endregion
 
+    public static DialogueController instance;
+
+
+    public void Awake()
+    {
+        instance = this;
+    }
 
     IEnumerator TypeSentence()
     {
@@ -35,7 +41,22 @@ public class DialogueController : MonoBehaviour
     // pular pra proxima frase/fala
     public void NextSentence()
     {
-
+        if (speechText.text == sentences[index]) // impedir de pular a frase antes do npc terminar de falar
+        {
+            if (index < sentences.Length - 1) // verifica se ainda nao acabaram todas as falas
+            {
+                index++;
+                speechText.text = "";
+                StartCoroutine(TypeSentence());
+            }
+            else // quando terminam as falas
+            {
+                speechText.text = "";
+                index = 0;
+                dialogueObj.SetActive(false);
+                sentences = null;
+            }
+        }
     }
 
     // chamar a fala

@@ -31,7 +31,11 @@ public class PlayerController : MonoBehaviour
     public Transform attackPoint;
     public float damage = 1;
     public float dealDamageDelay = 0.25f;
-    
+
+    #region Interacao
+    public bool interact = false;
+    #endregion
+
     [Header("VFXs")]
     public GameObject hitVFX;
     public GameObject rollVFX;
@@ -42,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public InputActionReference attackAction;
     public InputActionReference shootAction;
     public InputActionReference hackAction;
+    public InputActionReference speakAction;
 
     private void Awake()
     {
@@ -78,6 +83,9 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = moveInput * speed;
                 animator.SetBool("IsWalking", true);
+                animator.SetFloat("XInput", lastMoveDir.x);
+                animator.SetFloat("YInput", lastMoveDir.y);
+
                 if (rb.linearVelocity == Vector2.zero)
                 {
                     animator.SetBool("IsWalking", false);
@@ -105,6 +113,9 @@ public class PlayerController : MonoBehaviour
         // hack
         hackAction.action.Enable();
         hackAction.action.performed += OnHackPerformed;
+        // conversar
+        speakAction.action.Enable();
+        speakAction.action.performed += OnSpeakPerformed;
     }
 
     private void OnDisable()
@@ -125,28 +136,27 @@ public class PlayerController : MonoBehaviour
         // hack
         hackAction.action.Disable();
         hackAction.action.performed -= OnHackPerformed;
+        // conversar
+        speakAction.action.Disable();
+        speakAction.action.performed -= OnSpeakPerformed;
     }
 
     // mover
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
-        if (!locked)
-        {
-            moveInput = context.ReadValue<Vector2>();
-            lastMoveDir = moveInput;
+        moveInput = context.ReadValue<Vector2>();
+        lastMoveDir = moveInput;
 
-            if (moveInput != Vector2.zero)
-            {
-                animator.SetFloat("XInput", moveInput.x);
-                animator.SetFloat("YInput", moveInput.y);
-            } 
-        }       
+        if (moveInput != Vector2.zero && !locked)
+        {
+            animator.SetFloat("XInput", moveInput.x);
+            animator.SetFloat("YInput", moveInput.y);
+        }
     }
 
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
-        animator.SetBool("IsWalking", false);
     }
 
     // rolar
@@ -240,6 +250,19 @@ public class PlayerController : MonoBehaviour
     private void OnHackPerformed(InputAction.CallbackContext context)
     {
         Debug.Log("hack executado");
+    }
+
+    // conversar
+    private void OnSpeakPerformed(InputAction.CallbackContext context)
+    {
+        interact = true;
+        CancelInvoke("EndInteraction");
+        Invoke("EndInteraction", 0.5f);
+    }
+
+    private void EndInteraction()
+    {
+        interact = false;
     }
 
     void Unlock() => locked = false;
