@@ -5,6 +5,7 @@ public class EnemyController : MonoBehaviour
     public UnityEngine.AI.NavMeshAgent agent;
     public Animator anim;
     protected PlayerController player;
+    private Rigidbody2D rb;
 
     private enum EnemyStates { Patrol, Chase, Attack, Death }
     private EnemyStates state = EnemyStates.Patrol;
@@ -34,6 +35,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         player = FindFirstObjectByType<PlayerController>();
+        rb = GetComponent<Rigidbody2D>();
         // congelar rotacao do objeto do inimigo
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -109,7 +111,7 @@ public class EnemyController : MonoBehaviour
 
     void AttackUpdate()
     {
-        if (distance < attackDistance) // ataca
+        if (distance < attackDistance && !locked) // ataca
         {
             EnterAttack();
         }
@@ -130,23 +132,31 @@ public class EnemyController : MonoBehaviour
     void DeathUpdate()
     {
         Debug.Log("inimigo morreu");
+        anim.SetBool("IsWalking", false);
         //anim.SetTrigger("Death");
-        Destroy(gameObject, 0.5f);
+        Destroy(gameObject, 0.2f);
     }
 
     public void EnterGetHit(float dealtDamage)
     {
-        Debug.Log("inimigo ai");
-        //tocar animacao de hit
-        locked = true;
-        agent.isStopped = true;
-        hp -= dealtDamage;
         if (hp <= 0)
         {
             state = EnemyStates.Death;
         }
-        CancelInvoke("Unlock");
-        Invoke("Unlock", getHitDelay);
+        else
+        {
+            Debug.Log("inimigo ai");
+            //rb.AddForce(transform.position - player.transform.position, ForceMode2D.Impulse);
+            anim.SetBool("IsWalking", false);
+
+            //tocar animacao de hit
+            locked = true;
+            agent.isStopped = true;
+            hp -= dealtDamage;
+
+            CancelInvoke("Unlock");
+            Invoke("Unlock", getHitDelay);
+        }   
     }
 
     void EnterAttack()

@@ -20,9 +20,9 @@ MonoBehaviour:
     profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
     sentence:
       portuguese: "Ei, voc\xEA a\xED!"
-      english: 
+      english: Hey, you there!
   - actorName: NPC
     profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
     sentence:
       portuguese: "Me d\xE1 um dinheiro a\xED!"
-      english: 
+      english: Give some money!

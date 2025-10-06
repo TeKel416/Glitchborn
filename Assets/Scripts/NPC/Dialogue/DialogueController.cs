@@ -1,9 +1,21 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
+    public PlayerController player;
+
+    [System.Serializable]
+    public enum idiom
+    {
+        pt,
+        en
+    }
+
+    public idiom languague;
+
     [Header("Components")]
     public GameObject dialogueObj; // janela do dialogo
     public Image profileSprite; // sprite do perfil
@@ -14,9 +26,9 @@ public class DialogueController : MonoBehaviour
     public float typingSpeed; // tempo para escrever as letras da fala
 
     #region Variaveis de Controle
-    private bool isShowing; // visibilidade da janela
-    private int index; // index das falas
-    private string[] sentences;
+    public bool isShowing; // visibilidade da janela
+    public int index; // index das falas
+    public string[] sentences;
     #endregion
 
     public static DialogueController instance;
@@ -25,6 +37,11 @@ public class DialogueController : MonoBehaviour
     public void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        player = FindFirstObjectByType<PlayerController>();
     }
 
     IEnumerator TypeSentence()
@@ -45,6 +62,7 @@ public class DialogueController : MonoBehaviour
             sentences = txt;
             StartCoroutine(TypeSentence());
             isShowing = true;
+            player.locked = true;
         }
     }
 
@@ -65,6 +83,8 @@ public class DialogueController : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 sentences = null;
+                player.locked = false;
+                isShowing = false;
             }
         }
     }

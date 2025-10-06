@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator animator;
-    private bool locked = false;
+    public bool locked = false;
 
     [Header("Health")]
     public float hp = 3;
@@ -26,15 +26,14 @@ public class PlayerController : MonoBehaviour
     private float rollTimer;
 
     [Header("Attack")]
-    public float attackRange = 1.5f;
+    public float attackRange = 3f;
     public float attackDelay = 1f;
     public Transform attackPoint;
     public float damage = 1;
     public float dealDamageDelay = 0.25f;
 
-    #region Interacao
+    [Header("Interacao")]
     public bool interact = false;
-    #endregion
 
     [Header("VFXs")]
     public GameObject hitVFX;
@@ -217,7 +216,7 @@ public class PlayerController : MonoBehaviour
         {
             if (hits[i].CompareTag("Enemy"))
             {
-                hits[i].GetComponent<EnemyMeleeController>().EnterGetHit(damage);
+                hits[i].GetComponent<EnemyController>().EnterGetHit(damage);
             }
         }
     }
@@ -257,7 +256,7 @@ public class PlayerController : MonoBehaviour
     {
         interact = true;
         CancelInvoke("EndInteraction");
-        Invoke("EndInteraction", 0.5f);
+        Invoke("EndInteraction", 0.2f);
     }
 
     private void EndInteraction()
