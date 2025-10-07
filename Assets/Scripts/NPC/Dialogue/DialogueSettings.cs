@@ -16,6 +16,7 @@ public class DialogueSettings : ScriptableObject
     public List<Sentences> dialogues = new List<Sentences>();
 }
 
+
 [System.Serializable]
 public class Sentences
 {
@@ -23,6 +24,7 @@ public class Sentences
     public Sprite profile;
     public Languages sentence;
 }
+
 
 [System.Serializable]
 public class Languages

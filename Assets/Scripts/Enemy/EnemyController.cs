@@ -111,7 +111,7 @@ public class EnemyController : MonoBehaviour
 
     void AttackUpdate()
     {
-        if (distance < attackDistance && !locked) // ataca
+        if (!locked && distance < attackDistance) // ataca
         {
             EnterAttack();
         }

@@ -62,7 +62,10 @@ public class DialogueController : MonoBehaviour
             sentences = txt;
             StartCoroutine(TypeSentence());
             isShowing = true;
+            // bloqueia o player
             player.locked = true;
+            player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            player.GetComponent<Animator>().SetBool("IsWalking", false);
         }
     }
 

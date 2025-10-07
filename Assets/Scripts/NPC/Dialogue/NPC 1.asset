@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: NPC 1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSettings
   actor: {fileID: 4954645147545435841, guid: 14abf420b1b1f584a8dfba1de600fea4, type: 3}
-  speakerSprite: {fileID: 0}
+  speakerSprite: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
   sentence: 
   dialogues:
   - actorName: NPC
-    profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
+    profile: {fileID: 0}
     sentence:
       portuguese: "Ei, voc\xEA a\xED!"
       english: Hey, you there!
   - actorName: NPC
-    profile: {fileID: -7066941981183115402, guid: 6e7e858815961a94691546ed88816ad9, type: 3}
+    profile: {fileID: 0}
     sentence:
-      portuguese: "Me d\xE1 um dinheiro a\xED!"
-      english: Give some money!
+      portuguese: "Esse aqui \xE9 s\xF3 um di\xE1logo de teste."
+      english: This is just a test dialogue.

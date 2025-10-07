@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class BreakableBox : MonoBehaviour
 {
-    public int maxHealth = 3;
-    private int currentHealth;
+    public int health = 3;
 
     [Header("Sprites de estados")]
     public Sprite damagedSprite;
@@ -16,12 +15,10 @@ public class BreakableBox : MonoBehaviour
 
     void Start()
     {
-        sr = GetCompent<SpriteRenderer>();
-        currentHealth = maxHealth;
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(int damage)
-
+    /*public void TakeDamage(int damage)
     {
         currentHealth -= damage;
 // Trocar sprite quando estiver danificada
@@ -31,18 +28,19 @@ public class BreakableBox : MonoBehaviour
         if (currentHealth <= 0)
             BreakableBox();
     }
-
-    void Break()
+    */
+    public void Break()
     {
-        if (breakEffect != null)
-            Instantiate(breakEffect, transform.position, Quaternion.identity);
+        Instantiate(breakEffect, transform.position, transform.rotation);
 
         if (brokenSprite != null)
+        {
             sr.sprite = brokenSprite;
+        }
 
         // Desativa colisão e destrói depois de um tempo
-        GetComponent<Collider2D>().enabled = false;
-        Destroy(gameObject, 0.2f);
+        //GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject);
     }
 }
 

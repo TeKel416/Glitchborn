@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 rollDirection;
     private Vector2 lastMoveDir;
-    private bool isRolling = false;
+    public bool isRolling = false;
     private float rollTimer;
 
     [Header("Attack")]
@@ -218,6 +218,10 @@ public class PlayerController : MonoBehaviour
             {
                 hits[i].GetComponent<EnemyController>().EnterGetHit(damage);
             }
+            else if (hits[i].CompareTag("BreakableBox"))
+            {
+                hits[i].GetComponent<BreakableBox>().Break();
+            }
         }
     }
 
@@ -233,6 +237,7 @@ public class PlayerController : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject);
+            SceneLoader.LoadScene("SampleScene 1");
         }
 
         CancelInvoke("Unlock");

@@ -36,6 +36,9 @@ public class NPCDialogue : MonoBehaviour
 
     void GetNPCInfo()
     {
+        DialogueController.instance.profileSprite.sprite = dialogue.speakerSprite;
+        DialogueController.instance.actorNameText.text = dialogue.dialogues[0].actorName;
+
         for (int i = 0; i < dialogue.dialogues.Count; i++)
         {
             switch (DialogueController.instance.languague)

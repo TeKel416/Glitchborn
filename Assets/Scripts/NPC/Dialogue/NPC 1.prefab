@@ -69,7 +69,6 @@ MonoBehaviour:
   anim: {fileID: 7084023460913950774}
   patrolPoints:
   - {fileID: 0}
-  - {fileID: 0}
   idleDuration: 1.5
 --- !u!212 &382748015083341268
 SpriteRenderer:
@@ -119,7 +118,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7928629845994636789, guid: efc368348915cff44b5063903183ec0d, type: 3}
-  m_Color: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+  m_Color: {r: 0.46274513, g: 0.46274513, b: 0.46274513, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -139,7 +138,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 1.5
+  m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
