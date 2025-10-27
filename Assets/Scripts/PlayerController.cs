@@ -35,6 +35,11 @@ public class PlayerController : MonoBehaviour
     [Header("Interacao")]
     public bool interact = false;
 
+    [Header("Shoot")]
+    public GameObject bulletPrefab;
+    public float bulletSpeed = 30;
+    public float shootDelay = 0.5f;
+
     [Header("VFXs")]
     public GameObject hitVFX;
     public GameObject rollVFX;
@@ -247,7 +252,20 @@ public class PlayerController : MonoBehaviour
     // tiro
     private void OnShootPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("tiro executado");
+        if (!locked)
+        {
+            animator.SetBool("IsWalking", false);
+            //anim.SetTrigger("Shoot");
+            locked = true;
+            rb.linearVelocity = Vector2.zero;
+
+            GameObject b = Instantiate(bulletPrefab, attackPoint.position, attackPoint.rotation);
+            b.GetComponent<Rigidbody2D>().linearVelocity = lastMoveDir.normalized * bulletSpeed;
+            b.GetComponent<PlayerBullet>().damage = damage;
+
+            CancelInvoke("Unlock");
+            Invoke("Unlock", shootDelay);
+        }
     }
 
     // hack

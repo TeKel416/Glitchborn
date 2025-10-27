@@ -17,7 +17,8 @@ public class GeniusPuzzle : MonoBehaviour
     private List<GameObject> buttonsPressed = new List<GameObject>();
 
     [Header("Porta")]
-    public GameObject porta;
+    public GameObject portaSaida;
+    public GameObject portaEntrada;
 
     private void Start()
     {
@@ -59,17 +60,23 @@ public class GeniusPuzzle : MonoBehaviour
         if (buttonsPressed.Contains(button) || !allowTry) return;
 
         buttonsPressed.Add(button);
+        TurnWhite(button.GetComponent<SpriteRenderer>());
 
         if (buttonsPressed.Count == buttons.Length) 
         {
             if (!VerifyAnswer())
             {
+                foreach (GameObject i in buttonsPressed)
+                {
+                    TurnBlack(i.GetComponent<SpriteRenderer>());
+                }
                 buttonsPressed.Clear();
                 StartCoroutine(PlayAnswer());
             }
             else
             {
-                porta.SetActive(false);
+                portaSaida.SetActive(false);
+                if (portaEntrada != null) portaEntrada.SetActive(false);
             }
         }
     }
