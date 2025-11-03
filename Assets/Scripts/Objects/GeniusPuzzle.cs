@@ -1,5 +1,4 @@
 using System.Collections;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +18,9 @@ public class GeniusPuzzle : MonoBehaviour
     [Header("Porta")]
     public GameObject portaSaida;
     public GameObject portaEntrada;
+
+    [Header("Punição")]
+    public GameObject punicao;
 
     private void Start()
     {
@@ -70,8 +72,11 @@ public class GeniusPuzzle : MonoBehaviour
                 {
                     TurnBlack(i.GetComponent<SpriteRenderer>());
                 }
+
                 buttonsPressed.Clear();
                 StartCoroutine(PlayAnswer());
+                
+                Instantiate(punicao, transform.position, transform.rotation);
             }
             else
             {

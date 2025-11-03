@@ -1700,6 +1700,7 @@ MonoBehaviour:
   - {fileID: 1924894504}
   portaSaida: {fileID: 1526811248}
   portaEntrada: {fileID: 2111110258}
+  punicao: {fileID: 6097147106027155206, guid: d11f1add33428504191ee4077e50910b, type: 3}
 --- !u!1001 &361650394
 PrefabInstance:
   m_ObjectHideFlags: 0
