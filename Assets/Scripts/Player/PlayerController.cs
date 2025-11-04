@@ -242,7 +242,7 @@ public class PlayerController : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject);
-            SceneLoader.LoadScene("SampleScene 1");
+            SceneLoader.LoadScene("SampleScene");
         }
 
         GetComponent<HealthManager>().TakeDamage(dealtDamage);
