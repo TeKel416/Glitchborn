@@ -1,0 +1,728 @@
+fileFormatVersion: 2
+guid: 7d892b0ddb4b8e6409edd28f36858fb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6336185336028411870
+    second: Tee_0
+  - first:
+      213: -41025401649630947
+    second: Tee_1
+  - first:
+      213: -2363384935710114500
+    second: Tee_2
+  - first:
+      213: 5022175100068598029
+    second: Tee_3
+  - first:
+      213: -1400479711281856112
+    second: Tee_4
+  - first:
+      213: 9014726333966826431
+    second: Tee_5
+  - first:
+      213: -1684569832540712796
+    second: Tee_6
+  - first:
+      213: 2845954572764544072
+    second: Tee_7
+  - first:
+      213: -8681074675088736057
+    second: Tee_8
+  - first:
+      213: 3994464863927093313
+    second: Tee_9
+  - first:
+      213: -3823023160743385559
+    second: Tee_10
+  - first:
+      213: -4841817194355337931
+    second: Tee_11
+  - first:
+      213: 4682347765346440911
+    second: Tee_12
+  - first:
+      213: 4914423362563469927
+    second: Tee_13
+  - first:
+      213: -3811756854850627985
+    second: Tee_14
+  - first:
+      213: -387236810553145793
+    second: Tee_15
+  - first:
+      213: -1536821637324893329
+    second: Tee_16
+  - first:
+      213: 1486953051347463274
+    second: Tee_17
+  - first:
+      213: 7488816153918604949
+    second: Tee_18
+  - first:
+      213: 4327749840464442325
+    second: Tee_19
+  - first:
+      213: -241410896879815318
+    second: Tee_20
+  - first:
+      213: 7487502624585741779
+    second: Tee_21
+  - first:
+      213: 1009909491471025027
+    second: Tee_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tee_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 165
+        width: 606
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed733091ef6aee750800000000000000
+      internalID: 6336185336028411870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 297
+        width: 219
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11f7e35d9f3e6ff0800000000000000
+      internalID: -41025401649630947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_2
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 268
+        width: 75
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d3d773ce1933fd0800000000000000
+      internalID: -2363384935710114500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 284
+        width: 59
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d01966715a952b540800000000000000
+      internalID: 5022175100068598029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_4
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 293
+        width: 27
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09147e56f1f709ce0800000000000000
+      internalID: -1400479711281856112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 258
+        width: 246
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbb373b6ddba1d70800000000000000
+      internalID: 9014726333966826431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 56
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0521c99a43f98e0800000000000000
+      internalID: -1684569832540712796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_7
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 63
+        width: 255
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84c778cfa9cde7720800000000000000
+      internalID: 2845954572764544072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_8
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 18
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c042bac390a68780800000000000000
+      internalID: -8681074675088736057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148472251a03f6730800000000000000
+      internalID: 3994464863927093313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_10
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 18
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926acc7c0b4e1fac0800000000000000
+      internalID: -3823023160743385559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_11
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 18
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535521f2ae86eccb0800000000000000
+      internalID: -4841817194355337931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 18
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc691540c7a0bf040800000000000000
+      internalID: 4682347765346440911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_13
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 18
+        width: 45
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 762f971b20a833440800000000000000
+      internalID: 4914423362563469927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_14
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 18
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66d778065be91bc0800000000000000
+      internalID: -3811756854850627985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_15
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 18
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3646072c2240aaf0800000000000000
+      internalID: -387236810553145793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 18
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f639d100ddc1caae0800000000000000
+      internalID: -1536821637324893329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 18
+        width: 46
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6caf370ce7b2a410800000000000000
+      internalID: 1486953051347463274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_18
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 18
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59686825d9e9de760800000000000000
+      internalID: 7488816153918604949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_19
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 18
+        width: 41
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3f2adec814f0c30800000000000000
+      internalID: 4327749840464442325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_20
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 18
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65f19e711656acf0800000000000000
+      internalID: -241410896879815318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_21
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 18
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5fc3177f3f8e760800000000000000
+      internalID: 7487502624585741779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tee_22
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 18
+        width: 51
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3830d6ee45be30e00800000000000000
+      internalID: 1009909491471025027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tee_0: 6336185336028411870
+      Tee_1: -41025401649630947
+      Tee_10: -3823023160743385559
+      Tee_11: -4841817194355337931
+      Tee_12: 4682347765346440911
+      Tee_13: 4914423362563469927
+      Tee_14: -3811756854850627985
+      Tee_15: -387236810553145793
+      Tee_16: -1536821637324893329
+      Tee_17: 1486953051347463274
+      Tee_18: 7488816153918604949
+      Tee_19: 4327749840464442325
+      Tee_2: -2363384935710114500
+      Tee_20: -241410896879815318
+      Tee_21: 7487502624585741779
+      Tee_22: 1009909491471025027
+      Tee_3: 5022175100068598029
+      Tee_4: -1400479711281856112
+      Tee_5: 9014726333966826431
+      Tee_6: -1684569832540712796
+      Tee_7: 2845954572764544072
+      Tee_8: -8681074675088736057
+      Tee_9: 3994464863927093313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
