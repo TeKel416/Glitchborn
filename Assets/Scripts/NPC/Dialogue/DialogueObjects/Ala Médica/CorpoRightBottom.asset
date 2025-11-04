@@ -17,12 +17,12 @@ MonoBehaviour:
   sentence: 
   dialogues:
   - actorName: Paciente
-    profile: {fileID: -4226985191776114221, guid: 82c1ff8686e4fd24182a7dd71c8d8c29, type: 3}
+    profile: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
     sentence:
       portuguese: Eu era um aventureiro.
       english: I was an adventurer.
   - actorName: Paciente
-    profile: {fileID: -4226985191776114221, guid: 82c1ff8686e4fd24182a7dd71c8d8c29, type: 3}
+    profile: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
     sentence:
       portuguese: Mas tomei um tiro no joelho...
       english: But I got shot on the knee...

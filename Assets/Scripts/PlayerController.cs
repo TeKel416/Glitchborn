@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public bool locked = false;
 
     [Header("Health")]
-    public float hp = 3;
+    public float hp = 8;
     public float getHitDelay = 0.5f;
 
     [Header("Movement")]
@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                rollDirection = Vector2.right; // fallback caso jogo recem iniciado
+                rollDirection = Vector2.down; // fallback caso jogo recem iniciado
             }
 
             locked = true;
@@ -245,8 +245,25 @@ public class PlayerController : MonoBehaviour
             SceneLoader.LoadScene("SampleScene 1");
         }
 
+        GetComponent<HealthManager>().TakeDamage(dealtDamage);
+
         CancelInvoke("Unlock");
         Invoke("Unlock", getHitDelay);
+    }
+
+    public void Heal(float heal)
+    {
+        if (hp < 8)
+        {
+            hp += heal;
+        }
+        
+        if (hp > 8)
+        {
+            hp = 8;
+        }
+
+        GetComponent<HealthManager>().Heal(heal);
     }
 
     // tiro

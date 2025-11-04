@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7369191177514228175}
   - component: {fileID: 5879269969768880866}
+  - component: {fileID: 6749533549790129087}
   - component: {fileID: 411899498993409777}
   - component: {fileID: 1383420112647854285}
   - component: {fileID: 8821091521999849450}
@@ -81,17 +82,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
-  hp: 10
+  hp: 8
   getHitDelay: 0.3
   speed: 5
   rollDuration: 0.25
   rollCooldown: 0.45
+  isRolling: 0
   attackRange: 3
   attackDelay: 0.45
   attackPoint: {fileID: 7369191177514228175}
   damage: 1
   dealDamageDelay: 0.25
   interact: 0
+  bulletPrefab: {fileID: 0}
+  bulletSpeed: 30
+  shootDelay: 0.5
   hitVFX: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
   rollVFX: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
   moveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
@@ -100,6 +105,19 @@ MonoBehaviour:
   shootAction: {fileID: 5786043969374441292, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   hackAction: {fileID: -5483256228849666532, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   speakAction: {fileID: -3499429312827032525, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+--- !u!114 &6749533549790129087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977817710280840781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0085772cb35a4804f99d1b3b5361b80f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthManager
+  healthBar: {fileID: 0}
 --- !u!212 &411899498993409777
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -147,7 +165,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1777332380935752221, guid: 7b1c294bfc6c8f548902f22dc36ebfaa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -196,7 +214,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.125, y: 1.6875}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
