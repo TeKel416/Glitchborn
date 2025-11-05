@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CorpoLeftBottom
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSettings
   actor: {fileID: 8078178867904717423, guid: fe2566c9576210d4f8ffb6236f1f5a2d, type: 3}
-  speakerSprite: {fileID: 0}
+  speakerSprite: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
   sentence: 
   dialogues:
   - actorName: Paciente

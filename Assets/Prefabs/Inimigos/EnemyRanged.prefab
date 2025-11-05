@@ -60,7 +60,7 @@ MonoBehaviour:
   damage: 1
   dealDamageDelay: 0.25
   chaseDistance: 20
-  getHitDelay: 0.5
+  getHitDelay: 1
   hp: 3
   bulletPrefab: {fileID: 6563586966519812166, guid: 58c3efaf887f7e341a93c06f0ce1abc3, type: 3}
   bulletSpeed: 10

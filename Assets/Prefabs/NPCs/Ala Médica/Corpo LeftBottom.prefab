@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6212839087662474441}
   - component: {fileID: 6487547817896279866}
   - component: {fileID: 8795157838549209514}
-  - component: {fileID: 1122644960137062851}
   m_Layer: 0
   m_Name: Corpo LeftBottom
   m_TagString: Untagged
@@ -99,7 +98,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7928629845994636789, guid: efc368348915cff44b5063903183ec0d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
   m_Color: {r: 0.46274513, g: 0.46274513, b: 0.46274513, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,25 +131,3 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!95 &1122644960137062851
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078178867904717423}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00b6ee05e434f674cbb804fa485b3b35, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0

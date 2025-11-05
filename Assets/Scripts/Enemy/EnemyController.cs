@@ -139,7 +139,7 @@ public class EnemyController : MonoBehaviour
 
     public void EnterGetHit(float dealtDamage)
     {
-        if (hp <= 0)
+        if (hp <= 0 && state != EnemyStates.Death)
         {
             state = EnemyStates.Death;
         }
