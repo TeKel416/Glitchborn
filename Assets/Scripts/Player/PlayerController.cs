@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -247,6 +248,8 @@ public class PlayerController : MonoBehaviour
 
         GetComponent<HealthManager>().TakeDamage(dealtDamage);
 
+        if(onConveyorBelt) return;
+        
         CancelInvoke("Unlock");
         Invoke("Unlock", getHitDelay);
     }
@@ -283,6 +286,67 @@ public class PlayerController : MonoBehaviour
             CancelInvoke("Unlock");
             Invoke("Unlock", shootDelay);
         }
+    }
+
+    private bool onConveyorBelt = false;
+    public IEnumerator EnterConveyorBelt(Direction direction, Vector3 center, Vector3 end, float conveyorSpeed)
+    {
+        onConveyorBelt = true;
+        locked = true;
+        CancelInvoke("Unlock");
+        CancelInvoke("DealDamage");
+
+        Vector3 targetPosition = transform.position;
+        switch(direction)
+        {
+            case Direction.Up:
+                while(transform.position.y < end.y)
+                {
+                    if(transform.position.x > center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.x < center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
+
+                    targetPosition.y += Time.deltaTime * conveyorSpeed;
+                    transform.position = targetPosition;
+                    yield return null;
+                }
+            break;
+            case Direction.Down:
+                while(transform.position.y > end.y)
+                {            
+                    if(transform.position.x > center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.x < center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
+
+                    targetPosition.y -= Time.deltaTime * conveyorSpeed;
+                    transform.position = targetPosition;
+                    yield return null;
+                }
+            break;
+            case Direction.Right:
+                while(transform.position.x < end.x)
+                {
+                    if(transform.position.y > center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.y < center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
+
+                    targetPosition.x += Time.deltaTime * conveyorSpeed;
+                    transform.position = targetPosition;
+                    yield return null;
+                }
+            break;
+            case Direction.Left:
+                while(transform.position.x > end.x)
+                {
+                    if(transform.position.y > center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.y < center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
+
+                    targetPosition.x -= Time.deltaTime * conveyorSpeed;
+                    transform.position = targetPosition;
+                    yield return null;
+                }
+            break;
+        }
+
+        onConveyorBelt = false;
+        Unlock();
     }
 
     // hack
