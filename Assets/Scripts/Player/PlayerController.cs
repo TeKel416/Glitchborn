@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [Header("Roll / Dodge")]
     public float rollDuration;
     public float rollCooldown;
+    public Image rollCooldownIndicator;
 
     private Vector2 rollDirection;
     private Vector2 lastMoveDir;
@@ -63,8 +65,9 @@ public class PlayerController : MonoBehaviour
     {
         if (rollTimer > 0f)
         {
+            //rollCooldownIndicator.fillAmount = rollTimer / 100f;
             rollTimer -= Time.deltaTime;
-
+            
             if (isRolling && rollTimer <= rollCooldown)
             {
                 isRolling = false; // saiu do roll, entra no cooldown
@@ -234,6 +237,7 @@ public class PlayerController : MonoBehaviour
     // tomar dano
     public void EnterGetHit(float dealtDamage)
     {
+        GetComponent<HealthManager>().TakeDamage(hp);
         Debug.Log("player ai");
         //tocar animacao de hit
         locked = true;
@@ -245,9 +249,7 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             SceneLoader.LoadScene("SampleScene");
         }
-
-        GetComponent<HealthManager>().TakeDamage(dealtDamage);
-
+        
         if(onConveyorBelt) return;
         
         CancelInvoke("Unlock");
@@ -266,7 +268,7 @@ public class PlayerController : MonoBehaviour
             hp = 8;
         }
 
-        GetComponent<HealthManager>().Heal(heal);
+        GetComponent<HealthManager>().Heal(hp);
     }
 
     // tiro
