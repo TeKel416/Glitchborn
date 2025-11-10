@@ -35,13 +35,16 @@ public class PlayerController : MonoBehaviour
     public float damage = 1;
     public float dealDamageDelay = 0.25f;
 
-    [Header("Interacao")]
-    public bool interact = false;
-
     [Header("Shoot")]
     public GameObject bulletPrefab;
     public float bulletSpeed = 30;
     public float shootDelay = 0.5f;
+
+    [Header("Hack")]
+    public bool hack = false;
+
+    [Header("Interacao")]
+    public bool interact = false;
 
     [Header("VFXs")]
     public GameObject hitVFX;
@@ -121,9 +124,11 @@ public class PlayerController : MonoBehaviour
         // hack
         hackAction.action.Enable();
         hackAction.action.performed += OnHackPerformed;
+        hackAction.action.canceled += OnHackCanceled;
         // conversar
         speakAction.action.Enable();
         speakAction.action.performed += OnSpeakPerformed;
+        speakAction.action.canceled += OnSpeakCanceled;
     }
 
     private void OnDisable()
@@ -133,20 +138,22 @@ public class PlayerController : MonoBehaviour
         moveAction.action.performed -= OnMovePerformed;
         moveAction.action.canceled -= OnMoveCanceled;
         // rolar
-        rollAction.action.Disable();
-        rollAction.action.performed -= OnRollPerformed;
+        //rollAction.action.Disable();
+        //rollAction.action.performed -= OnRollPerformed;
         // ataque melee
         attackAction.action.Disable();
         attackAction.action.performed -= OnAttackPerformed;
         // tiro
-        shootAction.action.Disable();
-        shootAction.action.performed -= OnShootPerformed;
+        //shootAction.action.Disable();
+        //shootAction.action.performed -= OnShootPerformed;
         // hack
         hackAction.action.Disable();
         hackAction.action.performed -= OnHackPerformed;
+        hackAction.action.performed -= OnHackCanceled;
         // conversar
         speakAction.action.Disable();
         speakAction.action.performed -= OnSpeakPerformed;
+        speakAction.action.canceled -= OnMoveCanceled;
     }
 
     // mover
@@ -256,6 +263,7 @@ public class PlayerController : MonoBehaviour
         Invoke("Unlock", getHitDelay);
     }
 
+    // curar
     public void Heal(float heal)
     {
         if (hp < 8)
@@ -290,6 +298,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // esteira
     private bool onConveyorBelt = false;
     public IEnumerator EnterConveyorBelt(Direction direction, Vector3 center, Vector3 end, float conveyorSpeed)
     {
@@ -354,18 +363,21 @@ public class PlayerController : MonoBehaviour
     // hack
     private void OnHackPerformed(InputAction.CallbackContext context)
     {
-        Debug.Log("hack executado");
+        hack = true;
+    }
+
+    private void OnHackCanceled(InputAction.CallbackContext context)
+    {
+        hack = false;
     }
 
     // conversar
     private void OnSpeakPerformed(InputAction.CallbackContext context)
     {
         interact = true;
-        CancelInvoke("EndInteraction");
-        Invoke("EndInteraction", 0.2f);
     }
 
-    private void EndInteraction()
+    private void OnSpeakCanceled(InputAction.CallbackContext context)
     {
         interact = false;
     }

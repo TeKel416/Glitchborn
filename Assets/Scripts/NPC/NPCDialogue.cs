@@ -1,6 +1,4 @@
-using NUnit.Framework;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
@@ -13,6 +11,7 @@ public class NPCDialogue : MonoBehaviour
 
     private PlayerController player;
     private bool playerHit;
+    public GameObject indicator;
 
 
     private void Start()
@@ -25,7 +24,14 @@ public class NPCDialogue : MonoBehaviour
     {
         if (playerHit && player.interact)
         {
-            DialogueController.instance.Speak(sentences.ToArray());
+            if (!DialogueController.instance.isShowing)
+            {
+                DialogueController.instance.Speak(sentences.ToArray());
+            }
+            else
+            {
+                DialogueController.instance.NextSentence();
+            }
         }
     }
 
@@ -61,10 +67,12 @@ public class NPCDialogue : MonoBehaviour
         if (hit != null)
         {
             playerHit = true;
+            indicator.SetActive(true);
         }
         else
         {
             playerHit = false;
+            indicator.SetActive(false);
         }
     }
 

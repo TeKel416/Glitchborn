@@ -4,22 +4,13 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     public GameObject pauseMenu;
-    private bool isPaused;
+    private bool isPaused = false;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
-            if (isPaused)
-            {
-                pauseMenu.SetActive(false);
-                FreezeTime(false);
-            }
-            else
-            {
-                pauseMenu.SetActive(true);
-                FreezeTime(true);
-            }
+            if (isPaused) UnpauseGame(); else PauseGame();
         }
     }
 
@@ -36,17 +27,24 @@ public class SceneLoader : MonoBehaviour
     }
 
     // pausa e despausa o jogo
-    public void FreezeTime(bool isFrozen)
+    public void PauseGame()
     {
-        if (isFrozen)
-        {
-            isPaused = true;
-            Time.timeScale = 0;
-        }
-        else
-        {
-            isPaused = false;
-            Time.timeScale = 1;
-        }
+        isPaused = true;
+        Time.timeScale = 0;
+        pauseMenu.SetActive(true);
+        ShowMouseCursor(true);
+    }
+
+    public void UnpauseGame()
+    {
+        isPaused = false;
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+        ShowMouseCursor(false);
+    }
+
+    public static void ShowMouseCursor(bool show)
+    {
+        if (show) Cursor.lockState = CursorLockMode.None; else Cursor.lockState = CursorLockMode.Locked;
     }
 }

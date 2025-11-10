@@ -1,5 +1,4 @@
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -58,6 +57,7 @@ public class DialogueController : MonoBehaviour
     {
         if (!isShowing)
         {
+            SceneLoader.ShowMouseCursor(true);
             dialogueObj.SetActive(true);
             sentences = txt;
             StartCoroutine(TypeSentence());
@@ -87,7 +87,9 @@ public class DialogueController : MonoBehaviour
                 dialogueObj.SetActive(false);
                 sentences = null;
                 player.locked = false;
+                player.interact = false;
                 isShowing = false;
+                SceneLoader.ShowMouseCursor(false);
             }
         }
     }
