@@ -1,28 +1,10 @@
 fileFormatVersion: 2
-guid: 1a2bd61a46201ff4d9a46eaf36078b91
+guid: 69a80ee481cf9f4469557442206a5d4e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1962438780414574010
-    second: glitch_born_hospital_arts_0
-  - first:
-      213: 1918120674636172051
-    second: glitch_born_hospital_arts_1
-  - first:
-      213: 2379536674260737147
-    second: glitch_born_hospital_arts_2
-  - first:
-      213: 3781080660637244055
-    second: glitch_born_hospital_arts_3
-  - first:
-      213: -3998205884758371763
-    second: glitch_born_hospital_arts_4
-  - first:
-      213: -1154042161037799334
-    second: glitch_born_hospital_arts_5
-  - first:
-      213: -351718223734332504
-    second: glitch_born_hospital_arts_6
+      213: 420309866882209024
+    second: glitch born area de seguransa art_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,7 +101,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -144,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_0
+      name: glitch born area de seguransa art_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 3841
-        width: 640
-        height: 640
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,152 +141,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64240ff935404c4e0800000000000000
-      internalID: -1962438780414574010
+      spriteID: 0051b17d89d35d500800000000000000
+      internalID: 420309866882209024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_1
+      name: glitch born area de seguransa art_1
       rect:
         serializedVersion: 2
-        x: 640
-        y: 3841
-        width: 640
-        height: 640
+        x: 639
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 31b850847988e9a10800000000000000
-      internalID: 1918120674636172051
+      spriteID: a709df0348132574fbbc3238d1a62cb1
+      internalID: -1262208240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_2
+      name: glitch born area de seguransa art_2
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 3841
-        width: 640
-        height: 640
+        x: 1278
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b7c53577fffc50120800000000000000
-      internalID: 2379536674260737147
+      spriteID: f135e7c19f6a2de4e8c0c7b50b12117e
+      internalID: 1061881804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_3
+      name: glitch born area de seguransa art_3
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3841
-        width: 640
-        height: 640
+        x: 1917
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 79ad16ce3d8197430800000000000000
-      internalID: 3781080660637244055
+      spriteID: 38699e8cbce160247bde5e4f5f47e458
+      internalID: -1370787398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_4
+      name: glitch born area de seguransa art_4
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 3841
-        width: 640
-        height: 640
+        x: 2556
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d42d9146ee48388c0800000000000000
-      internalID: -3998205884758371763
+      spriteID: 2b6056f96e6372346861e39a8e0161af
+      internalID: 1017555162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_5
+      name: glitch born area de seguransa art_5
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 3841
-        width: 640
-        height: 640
+        x: 3195
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a509487d4c40cffe0800000000000000
-      internalID: -1154042161037799334
+      spriteID: a33220280d4aa2b49a3d4121b2ac2ff7
+      internalID: -978528676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_6
+      name: glitch born area de seguransa art_6
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3841
-        width: 640
-        height: 640
+        x: 3834
+        y: 3837
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8a3a84593227e1bf0800000000000000
-      internalID: -351718223734332504
+      spriteID: 94eb4b678c5c8bc44b4bccaeb479aad1
+      internalID: -372135230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_7
+      name: glitch born area de seguransa art_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 3201
-        width: 640
-        height: 640
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,20 +295,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ef2c39a44608b346ad75d691e449f10
-      internalID: -1208992213
+      spriteID: c46030e45803a7c4ca9dea0838ccb740
+      internalID: -1110142314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_8
+      name: glitch born area de seguransa art_8
       rect:
         serializedVersion: 2
-        x: 640
-        y: 3201
-        width: 640
-        height: 640
+        x: 639
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -335,20 +317,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183249904827e934eb4913df187b0774
-      internalID: -248305586
+      spriteID: 68f982b2bcfe35c469b0f143bb9d058e
+      internalID: 432495696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_9
+      name: glitch born area de seguransa art_9
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 3201
-        width: 640
-        height: 640
+        x: 1278
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,20 +339,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 573c028bb48bb354a9dfe7dacd336777
-      internalID: 362709652
+      spriteID: 46acae0ade9c93e429a76b27ef338751
+      internalID: -528755659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_10
+      name: glitch born area de seguransa art_10
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 3201
-        width: 640
-        height: 640
+        x: 1917
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,20 +361,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51fb11d05accafe449ab58a929ca892c
-      internalID: -1549868062
+      spriteID: e758c2e1f39b74e4f8362b68c58a66a1
+      internalID: 648494686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_11
+      name: glitch born area de seguransa art_11
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 3201
-        width: 640
-        height: 640
+        x: 2556
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -401,20 +383,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09941ffb358e6314daf35820996a64ab
-      internalID: 816714779
+      spriteID: e03f653d4247abb438e4c445cda77888
+      internalID: -1952884855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_12
+      name: glitch born area de seguransa art_12
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 3201
-        width: 640
-        height: 640
+        x: 3195
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -423,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f809370bda771414fab5fea1668bf731
-      internalID: 1597942531
+      spriteID: a26c7133fdb1b974fa53b77e4b622f05
+      internalID: -872119094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_13
+      name: glitch born area de seguransa art_13
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 3201
-        width: 640
-        height: 640
+        x: 3834
+        y: 3198
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -445,174 +427,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b91853f6add123418e8397f9630ef10
-      internalID: 35171026
+      spriteID: 050fcdc1590ea3e4899146357d3c42b5
+      internalID: -428465070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_14
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97f2e529127e89a4ba556858449bf4f3
-      internalID: -521487017
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_15
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 549b10f5de370f54db949a4b023bcaae
-      internalID: -1125773587
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_16
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d41490ce32d81b42806833ff8593b45
-      internalID: 1955285185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_17
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0752ac850c7e30c408170391f526f805
-      internalID: -1489714385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_18
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5091d3ef1280ca41abc5f865c87555e
-      internalID: -688691027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_19
-      rect:
-        serializedVersion: 2
-        x: 3200
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d83293ca4e76ca145b920e3a7afd0966
-      internalID: -800174453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_20
-      rect:
-        serializedVersion: 2
-        x: 3840
-        y: 2561
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ad2a6a6a82f67c4a8f27256a43a7ecc
-      internalID: -1016053769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: glitch_born_hospital_arts_21
+      name: glitch born area de seguransa art_14
       rect:
         serializedVersion: 2
         x: 0
-        y: 1921
-        width: 640
-        height: 640
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -621,20 +449,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf574601e3a1764a8b0460d65248e0b
-      internalID: -1307202638
+      spriteID: ca3846f51af358d4194fba883a176d21
+      internalID: -1899114773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_22
+      name: glitch born area de seguransa art_15
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1921
-        width: 640
-        height: 640
+        x: 639
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -643,20 +471,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffb0ce406b7bc064aa22124c856c0fc4
-      internalID: 1374485751
+      spriteID: 21fd40f0e51f7894996778b6c1e7c95b
+      internalID: -1079005435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_23
+      name: glitch born area de seguransa art_16
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1921
-        width: 640
-        height: 640
+        x: 1278
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -665,20 +493,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4f8fe5844991840bf870eae5689ad4
-      internalID: -873806871
+      spriteID: 750ebd01aa01025428fbd9fd01dd2c66
+      internalID: 1236823699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_24
+      name: glitch born area de seguransa art_17
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1921
-        width: 640
-        height: 640
+        x: 1917
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -687,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ec6da26738cc0f448fb6dcb7cbd9066
-      internalID: -1719251551
+      spriteID: f2edf9a5643d60f44985aba09cd910a5
+      internalID: -2035021640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_25
+      name: glitch born area de seguransa art_18
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 1921
-        width: 640
-        height: 640
+        x: 2556
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -709,20 +537,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0fced3884844894ba9f522c20299b08
-      internalID: -1235122702
+      spriteID: b865bd48ad04aba45929241c0fcf2b28
+      internalID: -493720700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_26
+      name: glitch born area de seguransa art_19
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 1921
-        width: 640
-        height: 640
+        x: 3195
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -731,20 +559,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a77f5861c675cb640b886243c596bfcc
-      internalID: 1565989794
+      spriteID: b33482df204c3da438126ed423a79782
+      internalID: -953017440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_27
+      name: glitch born area de seguransa art_20
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1921
-        width: 640
-        height: 640
+        x: 3834
+        y: 2559
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -753,20 +581,174 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdf58fc2506081840b654f1e4e4eae84
-      internalID: 2065482885
+      spriteID: 7d4707eb32b385a4484e68665dd172ef
+      internalID: 525453545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_28
+      name: glitch born area de seguransa art_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5245e05606a3754cb912addf05a57b1
+      internalID: -28579261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad28419d92b21a54a89d8eff5d64ed36
+      internalID: -1432152028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_23
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4ffecd50b99ec48a0e6072040d7c61
+      internalID: 1980256112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_24
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7d05f02a2a62844b0e8e77e80e996c
+      internalID: -600442574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_25
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72bec3fed3928f43a8e5d1eb73f8257
+      internalID: -1663211708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_26
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfabe032ae6d03f48bfe30d700e339a8
+      internalID: 534696163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_27
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 1920
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25368d0c1a996d9408b7c06d020e4060
+      internalID: -204368797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: glitch born area de seguransa art_28
       rect:
         serializedVersion: 2
         x: 0
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,20 +757,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ebe29631a70d84bb6904f3032036a7
-      internalID: -1174780162
+      spriteID: f43e5ceca732a064ba937cf816a05512
+      internalID: -2032265385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_29
+      name: glitch born area de seguransa art_29
       rect:
         serializedVersion: 2
-        x: 640
+        x: 639
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -797,20 +779,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f30c344f92d7534787a5a011c91be51
-      internalID: 1373047344
+      spriteID: d568a5a2afadcd94ca5bfc09f9a3aa0d
+      internalID: -1094836400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_30
+      name: glitch born area de seguransa art_30
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1278
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,20 +801,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797efdfd2946c2c4483b8d8fdde1ecba
-      internalID: -1973022544
+      spriteID: 3d44458462e5ded498a473851f051179
+      internalID: -1718037195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_31
+      name: glitch born area de seguransa art_31
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1917
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,20 +823,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f5969522346f424a8d39c333393fed7
-      internalID: -1470805927
+      spriteID: b2904f25de034254ca18b111b99a6538
+      internalID: -1146907419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_32
+      name: glitch born area de seguransa art_32
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2556
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -863,20 +845,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be0e2c850fae0b544b72b72e78304035
-      internalID: -1308843780
+      spriteID: 5a9aa3e0fc94f6e458362515414f1e10
+      internalID: -1504921053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_33
+      name: glitch born area de seguransa art_33
       rect:
         serializedVersion: 2
-        x: 3200
+        x: 3195
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -885,20 +867,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77761bd6008f3ca4882490d52665d444
-      internalID: 1102022841
+      spriteID: 31a6d3121196f444bbfb8d1ee56215b0
+      internalID: -1091000241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_34
+      name: glitch born area de seguransa art_34
       rect:
         serializedVersion: 2
-        x: 3840
+        x: 3834
         y: 1281
-        width: 640
-        height: 640
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -907,20 +889,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 532e8e2012c0ef042825b4e2fe56a25e
-      internalID: 252896453
+      spriteID: 2ed926a7e7092dd49b7d1068f3c38c83
+      internalID: -554343274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_35
+      name: glitch born area de seguransa art_35
       rect:
         serializedVersion: 2
         x: 0
-        y: 641
-        width: 640
-        height: 640
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,20 +911,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d5e2cb75fc9d374781fcdc00b9b5322
-      internalID: -367486626
+      spriteID: 29ff5d97653ad694393d817427ed44b1
+      internalID: -1103462175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_36
+      name: glitch born area de seguransa art_36
       rect:
         serializedVersion: 2
-        x: 640
-        y: 641
-        width: 640
-        height: 640
+        x: 639
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,20 +933,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89829b2d3fc490748b5aacb6597f3bbb
-      internalID: -2043187554
+      spriteID: 47b31a9262bff5b4d933b79406003d32
+      internalID: -1541662597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_37
+      name: glitch born area de seguransa art_37
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 641
-        width: 640
-        height: 640
+        x: 1278
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -973,20 +955,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be944f723a6ab840b5701c4366ef8f0
-      internalID: -613673121
+      spriteID: 986a2b950afaffe4e8a1271ad8e28cc3
+      internalID: 1520574558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_38
+      name: glitch born area de seguransa art_38
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 641
-        width: 640
-        height: 640
+        x: 1917
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,20 +977,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c528318ad340279429afb1c31c347323
-      internalID: -675845310
+      spriteID: f98e03e0642da0a4ca40504df04e20b4
+      internalID: 505120342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_39
+      name: glitch born area de seguransa art_39
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 641
-        width: 640
-        height: 640
+        x: 2556
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1017,20 +999,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c04af8de8ba6ba448a9090bbb0d0344
-      internalID: 90102361
+      spriteID: b9d80f3deaa6b9846abca73ac782fc4c
+      internalID: -1206997853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_40
+      name: glitch born area de seguransa art_40
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 641
-        width: 640
-        height: 640
+        x: 3195
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1039,20 +1021,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0f0520754b9834e8bce9edce7d4dd5
-      internalID: 1774669118
+      spriteID: 600cfc92ff2a4cd4a83c8d38cf0ae1ce
+      internalID: -303564297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_41
+      name: glitch born area de seguransa art_41
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 641
-        width: 640
-        height: 640
+        x: 3834
+        y: 642
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1061,20 +1043,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82b9a1df74291741941a6bc295a22a5
-      internalID: 465868651
+      spriteID: 5122f4a1cf88726438c2362764be1801
+      internalID: 331981380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_42
+      name: glitch born area de seguransa art_42
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 640
-        height: 640
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1083,20 +1065,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aedb94fe10ecdb349a67813b19b5056b
-      internalID: -1491133625
+      spriteID: 64dfd5d1efc819842b4a5c066e2199c7
+      internalID: 1534690300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_43
+      name: glitch born area de seguransa art_43
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1
-        width: 640
-        height: 640
+        x: 639
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1105,20 +1087,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee2b69c0777477e4aa93095d4413bf7e
-      internalID: -1446665505
+      spriteID: 6af6044ed8ad3b84f948787213dbe8f2
+      internalID: 361068681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_44
+      name: glitch born area de seguransa art_44
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1
-        width: 640
-        height: 640
+        x: 1278
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1127,20 +1109,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67e8406c786d7fa45b2a75f03ee14f0d
-      internalID: -1174059725
+      spriteID: f223b61818af6304c8b8c19c08e80b6b
+      internalID: -1896139650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_45
+      name: glitch born area de seguransa art_45
       rect:
         serializedVersion: 2
-        x: 1920
-        y: 1
-        width: 640
-        height: 640
+        x: 1917
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1149,20 +1131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc4bae6535ad53a4f8298d130259c9ae
-      internalID: -81694297
+      spriteID: ecc46468eb1ba2649b4406cf084f4527
+      internalID: 1825912925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_46
+      name: glitch born area de seguransa art_46
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 1
-        width: 640
-        height: 640
+        x: 2556
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,20 +1153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6608287225d25ef4aa300da5608d8928
-      internalID: 1528426664
+      spriteID: 88816356110ccd141ab6cf7a2ca4e0f7
+      internalID: 925394294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_47
+      name: glitch born area de seguransa art_47
       rect:
         serializedVersion: 2
-        x: 3200
-        y: 1
-        width: 640
-        height: 640
+        x: 3195
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1193,20 +1175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5166bede5dbc9d14c8782b779f7bff3c
-      internalID: 2065235553
+      spriteID: 58301996aabf6084a84009a627f9600c
+      internalID: -1159115181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: glitch_born_hospital_arts_48
+      name: glitch born area de seguransa art_48
       rect:
         serializedVersion: 2
-        x: 3840
-        y: 1
-        width: 640
-        height: 640
+        x: 3834
+        y: 3
+        width: 639
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1215,8 +1197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c19842ba29137e0459b2dbeb3f941a91
-      internalID: -288271708
+      spriteID: b1e70ddbf04d5c947861fba3ad068265
+      internalID: 1921502833
       vertices: []
       indices: 
       edges: []
@@ -1225,7 +1207,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a2160e6dcc8bc00499ab9cba2a299e85
+    spriteID: 38145ec3594cdbf41b8fbd48941f2f21
     internalID: 0
     vertices: []
     indices: 
@@ -1235,57 +1217,57 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":7.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":7.0},"gridSpriteSize":{"x":639.0,"y":639.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      glitch_born_hospital_arts_0: -1962438780414574010
-      glitch_born_hospital_arts_1: 1918120674636172051
-      glitch_born_hospital_arts_10: -1549868062
-      glitch_born_hospital_arts_11: 816714779
-      glitch_born_hospital_arts_12: 1597942531
-      glitch_born_hospital_arts_13: 35171026
-      glitch_born_hospital_arts_14: -521487017
-      glitch_born_hospital_arts_15: -1125773587
-      glitch_born_hospital_arts_16: 1955285185
-      glitch_born_hospital_arts_17: -1489714385
-      glitch_born_hospital_arts_18: -688691027
-      glitch_born_hospital_arts_19: -800174453
-      glitch_born_hospital_arts_2: 2379536674260737147
-      glitch_born_hospital_arts_20: -1016053769
-      glitch_born_hospital_arts_21: -1307202638
-      glitch_born_hospital_arts_22: 1374485751
-      glitch_born_hospital_arts_23: -873806871
-      glitch_born_hospital_arts_24: -1719251551
-      glitch_born_hospital_arts_25: -1235122702
-      glitch_born_hospital_arts_26: 1565989794
-      glitch_born_hospital_arts_27: 2065482885
-      glitch_born_hospital_arts_28: -1174780162
-      glitch_born_hospital_arts_29: 1373047344
-      glitch_born_hospital_arts_3: 3781080660637244055
-      glitch_born_hospital_arts_30: -1973022544
-      glitch_born_hospital_arts_31: -1470805927
-      glitch_born_hospital_arts_32: -1308843780
-      glitch_born_hospital_arts_33: 1102022841
-      glitch_born_hospital_arts_34: 252896453
-      glitch_born_hospital_arts_35: -367486626
-      glitch_born_hospital_arts_36: -2043187554
-      glitch_born_hospital_arts_37: -613673121
-      glitch_born_hospital_arts_38: -675845310
-      glitch_born_hospital_arts_39: 90102361
-      glitch_born_hospital_arts_4: -3998205884758371763
-      glitch_born_hospital_arts_40: 1774669118
-      glitch_born_hospital_arts_41: 465868651
-      glitch_born_hospital_arts_42: -1491133625
-      glitch_born_hospital_arts_43: -1446665505
-      glitch_born_hospital_arts_44: -1174059725
-      glitch_born_hospital_arts_45: -81694297
-      glitch_born_hospital_arts_46: 1528426664
-      glitch_born_hospital_arts_47: 2065235553
-      glitch_born_hospital_arts_48: -288271708
-      glitch_born_hospital_arts_5: -1154042161037799334
-      glitch_born_hospital_arts_6: -351718223734332504
-      glitch_born_hospital_arts_7: -1208992213
-      glitch_born_hospital_arts_8: -248305586
-      glitch_born_hospital_arts_9: 362709652
+      glitch born area de seguransa art_0: 420309866882209024
+      glitch born area de seguransa art_1: -1262208240
+      glitch born area de seguransa art_10: 648494686
+      glitch born area de seguransa art_11: -1952884855
+      glitch born area de seguransa art_12: -872119094
+      glitch born area de seguransa art_13: -428465070
+      glitch born area de seguransa art_14: -1899114773
+      glitch born area de seguransa art_15: -1079005435
+      glitch born area de seguransa art_16: 1236823699
+      glitch born area de seguransa art_17: -2035021640
+      glitch born area de seguransa art_18: -493720700
+      glitch born area de seguransa art_19: -953017440
+      glitch born area de seguransa art_2: 1061881804
+      glitch born area de seguransa art_20: 525453545
+      glitch born area de seguransa art_21: -28579261
+      glitch born area de seguransa art_22: -1432152028
+      glitch born area de seguransa art_23: 1980256112
+      glitch born area de seguransa art_24: -600442574
+      glitch born area de seguransa art_25: -1663211708
+      glitch born area de seguransa art_26: 534696163
+      glitch born area de seguransa art_27: -204368797
+      glitch born area de seguransa art_28: -2032265385
+      glitch born area de seguransa art_29: -1094836400
+      glitch born area de seguransa art_3: -1370787398
+      glitch born area de seguransa art_30: -1718037195
+      glitch born area de seguransa art_31: -1146907419
+      glitch born area de seguransa art_32: -1504921053
+      glitch born area de seguransa art_33: -1091000241
+      glitch born area de seguransa art_34: -554343274
+      glitch born area de seguransa art_35: -1103462175
+      glitch born area de seguransa art_36: -1541662597
+      glitch born area de seguransa art_37: 1520574558
+      glitch born area de seguransa art_38: 505120342
+      glitch born area de seguransa art_39: -1206997853
+      glitch born area de seguransa art_4: 1017555162
+      glitch born area de seguransa art_40: -303564297
+      glitch born area de seguransa art_41: 331981380
+      glitch born area de seguransa art_42: 1534690300
+      glitch born area de seguransa art_43: 361068681
+      glitch born area de seguransa art_44: -1896139650
+      glitch born area de seguransa art_45: 1825912925
+      glitch born area de seguransa art_46: 925394294
+      glitch born area de seguransa art_47: -1159115181
+      glitch born area de seguransa art_48: 1921502833
+      glitch born area de seguransa art_5: -978528676
+      glitch born area de seguransa art_6: -372135230
+      glitch born area de seguransa art_7: -1110142314
+      glitch born area de seguransa art_8: 432495696
+      glitch born area de seguransa art_9: -528755659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
