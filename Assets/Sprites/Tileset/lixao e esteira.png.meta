@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 640
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,11 +130,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 4477
-        height: 7677
+        y: 7038
+        width: 639
+        height: 639
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,11 +147,1837 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b56011bd14d7644a61cdd47c485304
+      internalID: 1409061097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_2
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089eb1721a419bf43a819147999a8a2c
+      internalID: 1775885231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_3
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7c28b621cb35c439ad8dc0c2d464a9
+      internalID: -1614032241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_4
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f643788b0d3f042b00cb358a94f5ee
+      internalID: -214918516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_5
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3239b4f8f5ff8f844b32c60114c29793
+      internalID: -1090520739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_6
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 7038
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d99e4b0a0dad7743a26b87c0408c5c7
+      internalID: -215781834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ba1b9e4ef7dd84aa8690f5d0c7e99c
+      internalID: -94186466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_8
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc4d8381284f9d44914a6ef1efa27a9
+      internalID: 1686613639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_9
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed55bcd61645ba4dad66fae003fe0c5
+      internalID: -903148438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_10
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000e2780eed89bb479816d4c3e07ae18
+      internalID: -1702153490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_11
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d037081cfbf5c44afc303da5a4e1e8
+      internalID: 382347073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_12
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6550816a79bde94096862cd977e39f7
+      internalID: -619994252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_13
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 6399
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffda0ad8e350e5f428af04c9ccd36318
+      internalID: -176341085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c086c0e5471ae4f489982d57ed9ec1ae
+      internalID: 26261198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_15
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b2823ea427269419bc20fe28309dd4
+      internalID: 1299730837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_16
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f36825333355d448b285ae1f9a61d2e
+      internalID: -1473393022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_17
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61b05bb6113b524db7d095aa96c8ad4
+      internalID: 1206546252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_18
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325b9d8d0ce86b84fba4e0d5ea12ccaf
+      internalID: -1009288134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_19
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0516140dc1d3841b9631d8a060feec
+      internalID: -1847322846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_20
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 5760
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97879fa92a31be743a59c8fa1767e84b
+      internalID: -1796244631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc5711f1c85ced48a63bd24519308ff
+      internalID: 191534055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_22
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8270dbc140171b24290749aee025f74a
+      internalID: 995124664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_23
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc31acb5368ed5542b9a3144f5ba0a09
+      internalID: 1466045615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_24
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc0254f33bc659469795ada7d7b2cfa
+      internalID: -1687835314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_25
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eab892a743ead441b4b215a3293dd03
+      internalID: -1645531526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_26
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3531c9f9d0ac766498d7ddcd57b43afe
+      internalID: -946195894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_27
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 5121
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9662855d73e86754794147a62c507afa
+      internalID: 332307019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6335c8422431440a2b5c6d5d51256b
+      internalID: 1462708527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_29
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0049e01fa809efb43aae5555e9b2eeb4
+      internalID: 1068646963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_30
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba13adb05f9186f44b9478ef63ef800c
+      internalID: -1769159848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_31
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb073f8129a186248a84c8626601c0d5
+      internalID: -2113963573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_32
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761a4286c92675a49b2eb607884af33a
+      internalID: 450263122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_33
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001b77777f77fc84183d4a5598b5317c
+      internalID: 717937547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_34
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 4482
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ec9abaa0db9da4ca196cd06aeeaec4
+      internalID: 392824569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72269fd94e80bc048936c3ea4cf6a53d
+      internalID: 18246603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_36
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c38ed4ac99c6f40a1e7e37ee23af4d
+      internalID: -1324170740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_37
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a7269bd3a3aacb4b957875e0b5e8787
+      internalID: -713211146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_38
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9147722e0cae9984483fd48a8e733a49
+      internalID: -1559570199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_39
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b737c2addc015428377739d9fbe396
+      internalID: -1402761152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_40
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c148fe9fcedb9db469240d40b104b2b9
+      internalID: 1077738501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_41
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 3843
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c36358976fb174cbda72694b725e62
+      internalID: 657030944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b70b144d57787784ca504a40a9e22f9e
+      internalID: -401903988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_43
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce971965e318894780859c68951e58e
+      internalID: -1687879047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_44
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a82f35408dec3c4c9316c5fe37463fd
+      internalID: 296129832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_45
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cb5c2ca8254aa4080cd72f12f1760d
+      internalID: -275376908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_46
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1484b21b812294a43a6e61a78edb42d4
+      internalID: 662354082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_47
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e272b467fe7b44ca8628b81301b03a
+      internalID: 1055805085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_48
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 3204
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cc7be4c9dcc9b45973adf2785d9fa2
+      internalID: 518066811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e834553210f81a04c91080af043ac82e
+      internalID: -1430970837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_50
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3ccb0a83f018c40bdaf8170d6b58d2
+      internalID: -387167034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_51
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f05e54b469bdc04ea3bb9893cebc4dd
+      internalID: 685957482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_52
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0975aa5d007dc9d4e938e835d3bd1612
+      internalID: 569344267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_53
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a948eaeac3fef14d964d20bf069637a
+      internalID: -501741269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_54
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108794d46e9153942807a9446f4d5746
+      internalID: -1723388161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_55
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 2565
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fff220d65974dd4bb9120b97a53aacf
+      internalID: 1104838734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10058a1188763b49aa1a5cc9d69f4bb
+      internalID: 686672095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_57
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e863cfc6360ca941a41be04fc1e7678
+      internalID: -18784669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_58
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90325b7dc1fb6b6458f536c26d074406
+      internalID: -1075581626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_59
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a88cc9a529cb364fa34bb733855b7ff
+      internalID: 2055809045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_60
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047fe401e4d61f94ab6ee0e695d789ce
+      internalID: -11413051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_61
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8e5d21571b5c44a805dc034d8174c4
+      internalID: 1597360201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_62
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 1926
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3098f4ce40a8b8b46b2ccb5de30e0298
+      internalID: 2025909251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c7dc96ad871c3409a6e3c2e28b0d32
+      internalID: -2102553468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_64
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691601d7a4a09d542a7b7af4d7ccf0bc
+      internalID: -944630189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_65
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643ffe042650ac242b3a1fdc2df91e93
+      internalID: -1038389468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_66
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910cf9f5969986444949f1de4623b023
+      internalID: -515235476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_67
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231cfff64b7985c48af5b0637e0007eb
+      internalID: 1653717713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_68
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb76a6d1a69e1114690571b9e6fe5fe1
+      internalID: 1550329526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_69
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 1287
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecffb9a90475dc543b1fec489fc1b09e
+      internalID: -999667248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da4625e159a41746acb8875a0652908
+      internalID: -2087687068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_71
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e60374279b91647adfd7d2028e9c60
+      internalID: -1996096935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_72
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc17b1c9f3d9d840bc86a6ae6877df4
+      internalID: 805882496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_73
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d61fd4ea9f99b41a12836c14c14426
+      internalID: 121747147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_74
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb818e1c63e603442a96ab5c1c051a20
+      internalID: -1656862127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_75
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d8474eeab98134281b5a78386e7c23
+      internalID: -1220879313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_76
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 648
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6ca7986229aa141b0853476747300c
+      internalID: -1095102952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5758053410bdd4d4b979dea05066056c
+      internalID: 1975339434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_78
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241a6561226e6f94e8b3748586a65250
+      internalID: -464235786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_79
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1811a4018c806248aeec929c5ea5682
+      internalID: 1004217004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_80
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68f69373a4cd9f46816dd196a5667f1
+      internalID: -475746508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_81
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bffd29b2f5986c4d9512ac3f8f49175
+      internalID: -407210729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_82
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99586059eab55e049b0367048309d849
+      internalID: 751125734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lixao e esteira_83
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 9
+        width: 639
+        height: 639
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdbff97e62a12344ad7d2b4fdf3a7b4
+      internalID: 26318729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5990dfe76461c9044972046366c9c498
     internalID: 0
     vertices: []
     indices: 
@@ -159,9 +1985,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":12.0},"gridSpriteSize":{"x":639.0,"y":639.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       lixao e esteira_0: -988169266032289690
+      lixao e esteira_1: 1409061097
+      lixao e esteira_10: -1702153490
+      lixao e esteira_11: 382347073
+      lixao e esteira_12: -619994252
+      lixao e esteira_13: -176341085
+      lixao e esteira_14: 26261198
+      lixao e esteira_15: 1299730837
+      lixao e esteira_16: -1473393022
+      lixao e esteira_17: 1206546252
+      lixao e esteira_18: -1009288134
+      lixao e esteira_19: -1847322846
+      lixao e esteira_2: 1775885231
+      lixao e esteira_20: -1796244631
+      lixao e esteira_21: 191534055
+      lixao e esteira_22: 995124664
+      lixao e esteira_23: 1466045615
+      lixao e esteira_24: -1687835314
+      lixao e esteira_25: -1645531526
+      lixao e esteira_26: -946195894
+      lixao e esteira_27: 332307019
+      lixao e esteira_28: 1462708527
+      lixao e esteira_29: 1068646963
+      lixao e esteira_3: -1614032241
+      lixao e esteira_30: -1769159848
+      lixao e esteira_31: -2113963573
+      lixao e esteira_32: 450263122
+      lixao e esteira_33: 717937547
+      lixao e esteira_34: 392824569
+      lixao e esteira_35: 18246603
+      lixao e esteira_36: -1324170740
+      lixao e esteira_37: -713211146
+      lixao e esteira_38: -1559570199
+      lixao e esteira_39: -1402761152
+      lixao e esteira_4: -214918516
+      lixao e esteira_40: 1077738501
+      lixao e esteira_41: 657030944
+      lixao e esteira_42: -401903988
+      lixao e esteira_43: -1687879047
+      lixao e esteira_44: 296129832
+      lixao e esteira_45: -275376908
+      lixao e esteira_46: 662354082
+      lixao e esteira_47: 1055805085
+      lixao e esteira_48: 518066811
+      lixao e esteira_49: -1430970837
+      lixao e esteira_5: -1090520739
+      lixao e esteira_50: -387167034
+      lixao e esteira_51: 685957482
+      lixao e esteira_52: 569344267
+      lixao e esteira_53: -501741269
+      lixao e esteira_54: -1723388161
+      lixao e esteira_55: 1104838734
+      lixao e esteira_56: 686672095
+      lixao e esteira_57: -18784669
+      lixao e esteira_58: -1075581626
+      lixao e esteira_59: 2055809045
+      lixao e esteira_6: -215781834
+      lixao e esteira_60: -11413051
+      lixao e esteira_61: 1597360201
+      lixao e esteira_62: 2025909251
+      lixao e esteira_63: -2102553468
+      lixao e esteira_64: -944630189
+      lixao e esteira_65: -1038389468
+      lixao e esteira_66: -515235476
+      lixao e esteira_67: 1653717713
+      lixao e esteira_68: 1550329526
+      lixao e esteira_69: -999667248
+      lixao e esteira_7: -94186466
+      lixao e esteira_70: -2087687068
+      lixao e esteira_71: -1996096935
+      lixao e esteira_72: 805882496
+      lixao e esteira_73: 121747147
+      lixao e esteira_74: -1656862127
+      lixao e esteira_75: -1220879313
+      lixao e esteira_76: -1095102952
+      lixao e esteira_77: 1975339434
+      lixao e esteira_78: -464235786
+      lixao e esteira_79: 1004217004
+      lixao e esteira_8: 1686613639
+      lixao e esteira_80: -475746508
+      lixao e esteira_81: -407210729
+      lixao e esteira_82: 751125734
+      lixao e esteira_83: 26318729
+      lixao e esteira_9: -903148438
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
