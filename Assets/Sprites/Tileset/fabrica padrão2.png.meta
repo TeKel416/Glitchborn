@@ -1,0 +1,1101 @@
+fileFormatVersion: 2
+guid: 3563eecc3e8bc4e4185101ddf7344b80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2249733232617160858
+    second: "fabrica padr\xE3o2_0"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 640
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f76766b8757c0e0800000000000000
+      internalID: -2249733232617160858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_1"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c73cb4d0b81964b9fc9cc10b369771
+      internalID: 859226515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_2"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e943c49f578b748408ab3e80d30eff01
+      internalID: -26997162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_3"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5c226cf77e6994486896ba3825944f
+      internalID: 1731913613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_4"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bba8b43d4047347921e936c1acbb42
+      internalID: 1068498464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_5"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c3e8b6f2d5e134eb19beb0148ebb86
+      internalID: 1136497402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_6"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 3200
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9b46bad91a494429d086aa882f2c7c
+      internalID: -353152191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_7"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64cfe4ccb7f4f4140908bebab6dedce1
+      internalID: -1526822650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_8"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d5c54ab68be254ca5d668f77f9faa3
+      internalID: 1460530887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_9"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e7bd2ed60264d4fba165ca24550a3e
+      internalID: -555194057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_10"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2192b4e09b5e82a488a194abeb3846d1
+      internalID: 1545024269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_11"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d03e9e8f1355347a5b2d4ff343f872
+      internalID: -1382557513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_12"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d79c57f1f64b4abda4c4bdff030ed
+      internalID: -503359776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_13"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 2560
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3600f975e451d4d408c2d779c762dfd6
+      internalID: 1191404365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_14"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dee7eebbfd030c4f979a97bf1162a83
+      internalID: -1918129032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_15"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e335cad1206a14f96ea7b585221118
+      internalID: 715650228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_16"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e049de6e74c2e64d85d5a3112bbea86
+      internalID: 1910196243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_17"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e4f90af880f854ba0c64cbd2454ddd
+      internalID: -801906388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_18"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c47234ec59b2aa4fb3ac9c4275d3e7c
+      internalID: 1524810553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_19"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7976a8e1f76e84f9a15bd0ab9ebc6b
+      internalID: 1524406451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_20"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 1920
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c2fbdbce1e7a14193b66750ea5f2b3
+      internalID: -511593907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_21"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba34a42af6902764d8ba397bed8580c1
+      internalID: 973397047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_22"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0825fa886787b94fba79de69708069c
+      internalID: 1935497549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_23"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad31edd2c7b41f42a668511a7c10834
+      internalID: 336112503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_24"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c6834dae2ea3843bb57150ca72fd32
+      internalID: -1268545740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_25"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890eef30a4a1ee54fbcd133439027919
+      internalID: -265387166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_26"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab642c1a77e36af448d147aac81b0247
+      internalID: 1709939853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_27"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 1280
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff966bb0d1c50f4d99ca1ad02f44cd5
+      internalID: 1555367400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_28"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf775e0723761c4b94719906ea68283
+      internalID: 1903101813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_29"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8107dfbaeae4ada4182565e52fb9739a
+      internalID: -212313375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_30"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89ca8aadf2231e4a9379d58805282d3
+      internalID: 1277072718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_31"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab92323fc0fdd641824fb747e8f520d
+      internalID: 121335934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_32"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b0248d70d300d418bf410094d8452c
+      internalID: -1539689792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_33"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a20bff95af851f479d0afc9f72bb07c
+      internalID: 2008526087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_34"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 640
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eae71e341eceb44b866665526626ff
+      internalID: 1238975810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_35"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cf9d5f4ef734644aed7feffe094e0a
+      internalID: -1417004971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_36"
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b521c7790fc5c644a9ad06c614668a36
+      internalID: -2078936796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_37"
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503beef0c6fcbcc4493b32c7d646f183
+      internalID: 1822280916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_38"
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920b8226b7803674cbd67c5765df6f1d
+      internalID: -1297618444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_39"
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d08ab4df83a7a641a7037834b708dd3
+      internalID: 441115070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_40"
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4146c3239543b9e44ac369410f506250
+      internalID: -206382199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "fabrica padr\xE3o2_41"
+      rect:
+        serializedVersion: 2
+        x: 3834
+        y: 0
+        width: 639
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda0b397c7094f248b7b6f026eb9c60d
+      internalID: 1757233006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5152fb5e599cd0c459bd0535f4fe5b75
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":639.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      "fabrica padr\xE3o2_0": -2249733232617160858
+      "fabrica padr\xE3o2_1": 859226515
+      "fabrica padr\xE3o2_10": 1545024269
+      "fabrica padr\xE3o2_11": -1382557513
+      "fabrica padr\xE3o2_12": -503359776
+      "fabrica padr\xE3o2_13": 1191404365
+      "fabrica padr\xE3o2_14": -1918129032
+      "fabrica padr\xE3o2_15": 715650228
+      "fabrica padr\xE3o2_16": 1910196243
+      "fabrica padr\xE3o2_17": -801906388
+      "fabrica padr\xE3o2_18": 1524810553
+      "fabrica padr\xE3o2_19": 1524406451
+      "fabrica padr\xE3o2_2": -26997162
+      "fabrica padr\xE3o2_20": -511593907
+      "fabrica padr\xE3o2_21": 973397047
+      "fabrica padr\xE3o2_22": 1935497549
+      "fabrica padr\xE3o2_23": 336112503
+      "fabrica padr\xE3o2_24": -1268545740
+      "fabrica padr\xE3o2_25": -265387166
+      "fabrica padr\xE3o2_26": 1709939853
+      "fabrica padr\xE3o2_27": 1555367400
+      "fabrica padr\xE3o2_28": 1903101813
+      "fabrica padr\xE3o2_29": -212313375
+      "fabrica padr\xE3o2_3": 1731913613
+      "fabrica padr\xE3o2_30": 1277072718
+      "fabrica padr\xE3o2_31": 121335934
+      "fabrica padr\xE3o2_32": -1539689792
+      "fabrica padr\xE3o2_33": 2008526087
+      "fabrica padr\xE3o2_34": 1238975810
+      "fabrica padr\xE3o2_35": -1417004971
+      "fabrica padr\xE3o2_36": -2078936796
+      "fabrica padr\xE3o2_37": 1822280916
+      "fabrica padr\xE3o2_38": -1297618444
+      "fabrica padr\xE3o2_39": 441115070
+      "fabrica padr\xE3o2_4": 1068498464
+      "fabrica padr\xE3o2_40": -206382199
+      "fabrica padr\xE3o2_41": 1757233006
+      "fabrica padr\xE3o2_5": 1136497402
+      "fabrica padr\xE3o2_6": -353152191
+      "fabrica padr\xE3o2_7": -1526822650
+      "fabrica padr\xE3o2_8": 1460530887
+      "fabrica padr\xE3o2_9": -555194057
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

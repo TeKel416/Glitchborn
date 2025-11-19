@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: b3a30b78e9e062140acfed3e01ae20ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 902455953913164869
+    second: fabrica escura e coisas de descanso2_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 640
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5443e6e98ea268c00800000000000000
+      internalID: 902455953913164869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_1
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95173cac68cfe164b9f76fb8a1d0806e
+      internalID: -1613407850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_2
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f47818f8e82944da45322c1b080ea1
+      internalID: -1798954310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_3
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60aa37e964acb541b1736c66efa3c6a
+      internalID: 756260934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_4
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf20506a63438c4682bec0d936e3c4b
+      internalID: 1208936941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_5
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 2556
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19aa8f750d2ea04eb6ef81fea72bac1
+      internalID: -958697493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1614896b74e5f8429afa2b489ad240e
+      internalID: -1514521450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_7
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23930095bdd6eb4e846e882cb72414b
+      internalID: 374507052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_8
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3543a29b0b64694fa67447ae6290b3b
+      internalID: 218192236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_9
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c5a6f3b89151f46b2f9268219597d2
+      internalID: 1585903869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_10
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3833b119421a90d4aa53baf7a682a242
+      internalID: 1537700419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_11
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1918
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56b6e052c88ff549b171b4fcafbc037
+      internalID: 2030859874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2da024af9bb6d49936113bd2db6828
+      internalID: -476956649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_13
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461ceefbf737f5f4ba505610e883de06
+      internalID: -1962488070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_14
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2f6586e7233d64089e687b291b0edc
+      internalID: 1614309216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_15
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a6531aeef1c834eab55471581a3376
+      internalID: 1766887084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_16
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a2a123b3e5bd8488273d99bb6a8da4
+      internalID: 465730431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_17
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 1280
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f7caeb9b9d9e9442aa34998456d4623
+      internalID: -1734338713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da371ff15399caa4d8704aaedf616fb0
+      internalID: 21793456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_19
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f8a104ddf8c5647b4cb0a63871fcef
+      internalID: 1004905528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_20
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8c6afb4f18b8645acd41a45d781a6c
+      internalID: 1192951483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_21
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b8b915f16f483499f797bc61576a1a
+      internalID: 484179934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_22
+      rect:
+        serializedVersion: 2
+        x: 2556
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbab70f957f2864ca2e26c078604ad4
+      internalID: 627193068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_23
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 642
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8d144460039a64b8b6aa80e46dd5f8
+      internalID: 1527956910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f9a87c02e4c404b9ba9ec0e3766fac
+      internalID: 1535644777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_25
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a32fb94bb30bc44c8a85e62dfd19b6d
+      internalID: -1591180639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_26
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 4
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e1cfa0d8a13af44bc2578a6f922078
+      internalID: -1331640798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_27
+      rect:
+        serializedVersion: 2
+        x: 1917
+        y: 4
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347a2ebfe3f2adc4f9de0c82cf9f9a8b
+      internalID: -273640018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fabrica escura e coisas de descanso2_28
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 4
+        width: 639
+        height: 638
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194cb096e0622614baebf3015931a7ae
+      internalID: -1794783367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d66d42dbce4de1246ac33d33694c1c6a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":5.0},"gridSpriteSize":{"x":639.0,"y":638.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      fabrica escura e coisas de descanso2_0: 902455953913164869
+      fabrica escura e coisas de descanso2_1: -1613407850
+      fabrica escura e coisas de descanso2_10: 1537700419
+      fabrica escura e coisas de descanso2_11: 2030859874
+      fabrica escura e coisas de descanso2_12: -476956649
+      fabrica escura e coisas de descanso2_13: -1962488070
+      fabrica escura e coisas de descanso2_14: 1614309216
+      fabrica escura e coisas de descanso2_15: 1766887084
+      fabrica escura e coisas de descanso2_16: 465730431
+      fabrica escura e coisas de descanso2_17: -1734338713
+      fabrica escura e coisas de descanso2_18: 21793456
+      fabrica escura e coisas de descanso2_19: 1004905528
+      fabrica escura e coisas de descanso2_2: -1798954310
+      fabrica escura e coisas de descanso2_20: 1192951483
+      fabrica escura e coisas de descanso2_21: 484179934
+      fabrica escura e coisas de descanso2_22: 627193068
+      fabrica escura e coisas de descanso2_23: 1527956910
+      fabrica escura e coisas de descanso2_24: 1535644777
+      fabrica escura e coisas de descanso2_25: -1591180639
+      fabrica escura e coisas de descanso2_26: -1331640798
+      fabrica escura e coisas de descanso2_27: -273640018
+      fabrica escura e coisas de descanso2_28: -1794783367
+      fabrica escura e coisas de descanso2_3: 756260934
+      fabrica escura e coisas de descanso2_4: 1208936941
+      fabrica escura e coisas de descanso2_5: -958697493
+      fabrica escura e coisas de descanso2_6: -1514521450
+      fabrica escura e coisas de descanso2_7: 374507052
+      fabrica escura e coisas de descanso2_8: 218192236
+      fabrica escura e coisas de descanso2_9: 1585903869
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
