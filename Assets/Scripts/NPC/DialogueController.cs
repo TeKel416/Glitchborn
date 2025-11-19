@@ -6,16 +6,7 @@ public class DialogueController : MonoBehaviour
 {
     public PlayerController player;
 
-    [System.Serializable]
-    public enum idiom
-    {
-        pt,
-        en
-    }
-
-    public idiom languague;
-
-    [Header("Components")]
+    [Header("Elementos da Caixa de Diálogo")]
     public GameObject dialogueObj; // janela do dialogo
     public Image profileSprite; // sprite do perfil
     public Text speechText; // texto da fala
@@ -31,7 +22,6 @@ public class DialogueController : MonoBehaviour
     #endregion
 
     public static DialogueController instance;
-
 
     public void Awake()
     {
@@ -53,15 +43,18 @@ public class DialogueController : MonoBehaviour
     }
 
     // chamar a fala
-    public void Speak(string[] txt)
+    public void Speak(string speakerName, Sprite speakerSprite, string[] txt)
     {
         if (!isShowing)
         {
             SceneLoader.ShowMouseCursor(true);
             dialogueObj.SetActive(true);
             sentences = txt;
+            actorNameText.text = speakerName;
+            profileSprite.sprite = speakerSprite;
             StartCoroutine(TypeSentence());
             isShowing = true;
+
             // bloqueia o player
             player.locked = true;
             player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
@@ -86,10 +79,12 @@ public class DialogueController : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 sentences = null;
-                player.locked = false;
-                player.interact = false;
                 isShowing = false;
                 SceneLoader.ShowMouseCursor(false);
+
+                // desbloqueia o player
+                player.locked = false;
+                player.interact = false;
             }
         }
     }

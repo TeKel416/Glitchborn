@@ -150,6 +150,7 @@ Transform:
   m_Children:
   - {fileID: 514644866}
   - {fileID: 650802288}
+  - {fileID: 981858287}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19191964 stripped
@@ -492,6 +493,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 19191964}
+    - target: {fileID: 5996203986016907965, guid: 7c49253ddb41ef347b3ce5c59947de44, type: 3}
+      propertyPath: isShowing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6027502294743221085, guid: 7c49253ddb41ef347b3ce5c59947de44, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -523,6 +528,10 @@ PrefabInstance:
     - target: {fileID: 6308072289957691348, guid: 7c49253ddb41ef347b3ce5c59947de44, type: 3}
       propertyPath: m_Name
       value: == GLOBAL ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629200367431600698, guid: 7c49253ddb41ef347b3ce5c59947de44, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7117112634326794018, guid: 7c49253ddb41ef347b3ce5c59947de44, type: 3}
       propertyPath: m_IsActive
@@ -21288,6 +21297,101 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &981858286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5622916}
+    m_Modifications:
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: b64ffc81c99c1284d9a4427eec056fce, type: 2}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: speakerName
+      value: "Secret\xE1rio"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: dialogueRange
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: speakerSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: 'sentences.Array.data[0]'
+      value: "O que voc\xEA est\xE1 fazendo aqui?!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: 'sentences.Array.data[1]'
+      value: Volte ao seu posto de trabalho!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.76438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.63287
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7637674609542387168, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_Name
+      value: DeskNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 8278822222918197051, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3342469142205057225, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+--- !u!4 &981858287 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+  m_PrefabInstance: {fileID: 981858286}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987064323
 GameObject:
   m_ObjectHideFlags: 0
@@ -56768,6 +56872,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: speakerName
+      value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: speakerSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: 'sentences.Array.data[0]'
+      value: "Ei, voc\xEA a\xED!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691135846285744823, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
+      propertyPath: 'sentences.Array.data[1]'
+      value: "Nada n\xE3o :P"
+      objectReference: {fileID: 0}
     - target: {fileID: 7524183860779368961, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.76438
@@ -56812,7 +56936,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3342469142205057225, guid: 5b640c63c755e8b4a85b549bf6ef602a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -67240,6 +67365,22 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: ebcb766f48295524c91fdecc7ca86c53, type: 2}
+    - target: {fileID: 5360838347883621348, guid: 50fead7e51d495e49b3250d8686707a7, type: 3}
+      propertyPath: speakerName
+      value: Paciente
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360838347883621348, guid: 50fead7e51d495e49b3250d8686707a7, type: 3}
+      propertyPath: speakerSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+    - target: {fileID: 5360838347883621348, guid: 50fead7e51d495e49b3250d8686707a7, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5360838347883621348, guid: 50fead7e51d495e49b3250d8686707a7, type: 3}
+      propertyPath: 'sentences.Array.data[0]'
+      value: "Eu s\xF3 quero ir pra casa..."
+      objectReference: {fileID: 0}
     - target: {fileID: 7231231205725548136, guid: 50fead7e51d495e49b3250d8686707a7, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -67313,6 +67454,26 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 4a4fe98e6f3061643b3bb3222cb62669, type: 2}
+    - target: {fileID: 5781029145248277168, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
+      propertyPath: speakerName
+      value: Paciente
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781029145248277168, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
+      propertyPath: speakerSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+    - target: {fileID: 5781029145248277168, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
+      propertyPath: sentences.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781029145248277168, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
+      propertyPath: 'sentences.Array.data[0]'
+      value: Eu era um aventureiro.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5781029145248277168, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
+      propertyPath: 'sentences.Array.data[1]'
+      value: Mas tomei um tiro no joelho...
+      objectReference: {fileID: 0}
     - target: {fileID: 7244781768412363270, guid: a60b6304a1ef19642b9b937fa8e16428, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.01438
@@ -67536,6 +67697,22 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 11400000, guid: 8877cb20f72d6f84f883fb861175311d, type: 2}
+    - target: {fileID: 7327224744316084858, guid: 21d0512a1438b1648bdd9993da5eccca, type: 3}
+      propertyPath: speakerName
+      value: Paciente
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327224744316084858, guid: 21d0512a1438b1648bdd9993da5eccca, type: 3}
+      propertyPath: speakerSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+    - target: {fileID: 7327224744316084858, guid: 21d0512a1438b1648bdd9993da5eccca, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327224744316084858, guid: 21d0512a1438b1648bdd9993da5eccca, type: 3}
+      propertyPath: 'sentences.Array.data[0]'
+      value: "Ouch... Tudo d\xF3i..."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCDialogue : MonoBehaviour
@@ -6,8 +5,9 @@ public class NPCDialogue : MonoBehaviour
     public float dialogueRange;
     public LayerMask playerLayer;
 
-    public DialogueSettings dialogue;
-    private List<string> sentences = new List<string>();
+    public string speakerName;
+    public Sprite speakerSprite;
+    public string[] sentences;
 
     private PlayerController player;
     private bool playerHit;
@@ -17,7 +17,6 @@ public class NPCDialogue : MonoBehaviour
     private void Start()
     {
         player = FindFirstObjectByType<PlayerController>();
-        GetNPCInfo();
     }
 
     private void Update()
@@ -26,7 +25,7 @@ public class NPCDialogue : MonoBehaviour
         {
             if (!DialogueController.instance.isShowing)
             {
-                DialogueController.instance.Speak(sentences.ToArray());
+                DialogueController.instance.Speak(speakerName, speakerSprite, sentences);
             }
             else
             {
@@ -38,26 +37,6 @@ public class NPCDialogue : MonoBehaviour
     void FixedUpdate()
     {
         ShowDialogue();
-    }
-
-    void GetNPCInfo()
-    {
-        DialogueController.instance.profileSprite.sprite = dialogue.speakerSprite;
-        DialogueController.instance.actorNameText.text = dialogue.dialogues[0].actorName;
-
-        for (int i = 0; i < dialogue.dialogues.Count; i++)
-        {
-            switch (DialogueController.instance.languague)
-            {
-                case DialogueController.idiom.en:
-                    sentences.Add(dialogue.dialogues[i].sentence.english);
-                    break;
-
-                default:
-                    sentences.Add(dialogue.dialogues[i].sentence.portuguese);
-                    break;
-            }
-        }
     }
 
     void ShowDialogue()
