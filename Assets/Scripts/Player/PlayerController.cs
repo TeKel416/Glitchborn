@@ -94,6 +94,7 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = moveInput * speed;
                 animator.SetBool("IsWalking", true);
+
                 animator.SetFloat("XInput", lastMoveDir.x);
                 animator.SetFloat("YInput", lastMoveDir.y);
 
@@ -102,7 +103,6 @@ public class PlayerController : MonoBehaviour
                     animator.SetBool("IsWalking", false);
                 }
             }
-            
         }
     }
 
@@ -137,15 +137,9 @@ public class PlayerController : MonoBehaviour
         moveAction.action.Disable();
         moveAction.action.performed -= OnMovePerformed;
         moveAction.action.canceled -= OnMoveCanceled;
-        // rolar
-        //rollAction.action.Disable();
-        //rollAction.action.performed -= OnRollPerformed;
         // ataque melee
         attackAction.action.Disable();
         attackAction.action.performed -= OnAttackPerformed;
-        // tiro
-        //shootAction.action.Disable();
-        //shootAction.action.performed -= OnShootPerformed;
         // hack
         hackAction.action.Disable();
         hackAction.action.performed -= OnHackPerformed;
@@ -160,12 +154,24 @@ public class PlayerController : MonoBehaviour
     private void OnMovePerformed(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        lastMoveDir = moveInput;
+
+        // Arredonda para o inteiro mais próximo (-1, 0, 1) para o Blend Tree
+        Vector2 animationInput = new Vector2(
+            Mathf.Round(moveInput.x),
+            Mathf.Round(moveInput.y)
+        );
+
+        // Se o input não for zero, armazena a versão arredondada para a animação
+        if (animationInput.sqrMagnitude > 0f)
+        {
+            lastMoveDir = animationInput; // lastMoveDir agora armazena (-1, 0, 1)
+        }
 
         if (moveInput != Vector2.zero && !locked)
         {
-            animator.SetFloat("XInput", moveInput.x);
-            animator.SetFloat("YInput", moveInput.y);
+            // Envia os valores arredondados para o Animator
+            animator.SetFloat("XInput", lastMoveDir.x);
+            animator.SetFloat("YInput", lastMoveDir.y);
         }
     }
 

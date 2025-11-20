@@ -12,7 +12,6 @@ public class GeniusPuzzle : MonoBehaviour
     [Header("Ordem dos Botoes")]
     public GameObject[] buttons;
 
-    private List<SpriteRenderer> sprites = new List<SpriteRenderer>();
     private List<GameObject> buttonsPressed = new List<GameObject>();
 
     [Header("Porta")]
@@ -22,14 +21,6 @@ public class GeniusPuzzle : MonoBehaviour
     [Header("Punição")]
     public GameObject punicao;
 
-    private void Start()
-    {
-        for (int i = 0; i < buttons.Length; i++)
-        {
-            sprites.Add(buttons[i].GetComponent<SpriteRenderer>());
-        }
-    }
-
     IEnumerator PlayAnswer()
     {
         allowTry = false;
@@ -37,9 +28,9 @@ public class GeniusPuzzle : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             yield return new WaitForSeconds(0.5f);
-            TurnWhite(sprites[i]);
+            buttons[i].GetComponent<Animator>().SetBool("isOn", true);
             yield return new WaitForSeconds(timer);
-            TurnBlack(sprites[i]);
+            buttons[i].GetComponent<Animator>().SetBool("isOn", false);
         }
 
         allowTry = true;
@@ -47,22 +38,12 @@ public class GeniusPuzzle : MonoBehaviour
 
     public void ShowAnswer() => StartCoroutine(PlayAnswer());
 
-    private void TurnWhite(SpriteRenderer sprite)
-    {
-        sprite.color = Color.white;
-    }
-
-    private void TurnBlack(SpriteRenderer sprite)
-    {
-        sprite.color = Color.black;
-    }
-
     public void AddButtonToList(GameObject button)
     {
         if (buttonsPressed.Contains(button) || !allowTry) return;
 
         buttonsPressed.Add(button);
-        TurnWhite(button.GetComponent<SpriteRenderer>());
+        button.GetComponent<Animator>().SetBool("isPressed", true); ;
 
         if (buttonsPressed.Count == buttons.Length) 
         {
@@ -70,7 +51,7 @@ public class GeniusPuzzle : MonoBehaviour
             {
                 foreach (GameObject i in buttonsPressed)
                 {
-                    TurnBlack(i.GetComponent<SpriteRenderer>());
+                    i.GetComponent<Animator>().SetBool("isPressed", false);
                 }
 
                 buttonsPressed.Clear();
