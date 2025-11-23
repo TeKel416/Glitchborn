@@ -369,10 +369,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 220789718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63591340f9cb1e84ba6dec3ccdf84a95, type: 3}
+  m_Script: {fileID: 11500000, guid: b794d1bd188c0fd4587c9186d87577a6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  pauseMenu: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenu
 --- !u!1 &241926020
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,16 +774,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
   soundList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - name: WALK
+    sounds: []
+  - name: ROLL
+    sounds: []
+  - name: ATTACK
+    sounds: []
+  - name: SHOOT
+    sounds: []
+  - name: TALK
+    sounds: []
+  - name: HURT
+    sounds: []
+  - name: HEAL
+    sounds: []
+  - name: BREAK
+    sounds: []
+  - name: DOOROPEN
+    sounds: []
+  - name: DOORCLOSE
+    sounds: []
 --- !u!4 &1247442364
 Transform:
   m_ObjectHideFlags: 0
@@ -1020,27 +1029,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 220789723}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: ShowMouseCursor
-        m_Mode: 6
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 220789723}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: SampleScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1640819564
@@ -1369,8 +1366,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 220789723}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1418,6 +1415,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108502825}
   m_CullTransparentMesh: 1
+--- !u!1001 &9139505505601278377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3300660581575814483, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_Name
+      value: MusicManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093841027778694221, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a3d1da88c274aa4fa2272b6c1f14064, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1426,3 +1480,4 @@ SceneRoots:
   - {fileID: 220789722}
   - {fileID: 2105798193}
   - {fileID: 1247442364}
+  - {fileID: 9139505505601278377}

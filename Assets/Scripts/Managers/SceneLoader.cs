@@ -21,7 +21,7 @@ public class SceneLoader : MonoBehaviour
     }
 
     // fecha o jogo
-    public void QuitGame()
+    public static void QuitGame()
     {
         Application.Quit();
     }
