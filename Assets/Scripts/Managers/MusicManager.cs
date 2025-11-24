@@ -12,15 +12,7 @@ public class MusicManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        instance = this;
     }
 
     public void PlayMusic(string trackName, float fadeDuration = 0.5f)

@@ -11,15 +11,7 @@ public class SoundManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+        instance = this;
     }
 
     public void PlaySound3D(AudioClip clip, Vector3 pos)

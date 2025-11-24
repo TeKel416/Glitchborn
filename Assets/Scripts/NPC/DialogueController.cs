@@ -1,6 +1,6 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
@@ -8,9 +8,8 @@ public class DialogueController : MonoBehaviour
 
     [Header("Elementos da Caixa de Diálogo")]
     public GameObject dialogueObj; // janela do dialogo
-    public Image profileSprite; // sprite do perfil
-    public Text speechText; // texto da fala
-    public Text actorNameText; // nome do npc
+    public TMP_Text speechText; // texto da fala
+    public TMP_Text actorNameText; // nome do npc
 
     [Header("Settings")]
     public float typingSpeed; // tempo para escrever as letras da fala
@@ -43,7 +42,7 @@ public class DialogueController : MonoBehaviour
     }
 
     // chamar a fala
-    public void Speak(string speakerName, Sprite speakerSprite, string[] txt)
+    public void Speak(string speakerName, string[] txt)
     {
         if (!isShowing)
         {
@@ -51,7 +50,6 @@ public class DialogueController : MonoBehaviour
             dialogueObj.SetActive(true);
             sentences = txt;
             actorNameText.text = speakerName;
-            profileSprite.sprite = speakerSprite;
             StartCoroutine(TypeSentence());
             isShowing = true;
 

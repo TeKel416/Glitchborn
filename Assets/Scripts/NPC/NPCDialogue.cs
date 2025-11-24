@@ -6,7 +6,6 @@ public class NPCDialogue : MonoBehaviour
     public LayerMask playerLayer;
 
     public string speakerName;
-    public Sprite speakerSprite;
     public string[] sentences;
 
     private PlayerController player;
@@ -25,7 +24,7 @@ public class NPCDialogue : MonoBehaviour
         {
             if (!DialogueController.instance.isShowing)
             {
-                DialogueController.instance.Speak(speakerName, speakerSprite, sentences);
+                DialogueController.instance.Speak(speakerName, sentences);
             }
             else
             {
