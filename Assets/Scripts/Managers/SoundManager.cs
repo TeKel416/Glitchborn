@@ -1,63 +1,42 @@
 using UnityEngine;
-using System;
 
-public enum SoundType
-{
-    WALK,
-    ROLL,
-    ATTACK,
-    SHOOT,
-    TALK,
-    HURT,
-    HEAL,
-    BREAK,
-    DOOROPEN,
-    DOORCLOSE
-}
-
-[RequireComponent(typeof(AudioSource)), ExecuteInEditMode]
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] private SoundList[] soundList;
-    private static SoundManager instance;
-    private AudioSource audioSource;
+    public static SoundManager instance;
+
+    [SerializeField]
+    private SFXLibrary sfxLibrary;
+    [SerializeField]
+    private AudioSource sfx2DSource;
 
     private void Awake()
     {
-        instance = this;
-    }
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
-    public static void PlaySound(SoundType sound, float volume = 1)
-    {
-        AudioClip[] clips = instance.soundList[(int)sound].Sounds;
-        AudioClip randomClip = clips[UnityEngine.Random.Range(0, clips.Length)];
-
-        instance.audioSource.PlayOneShot(randomClip, volume);
-    }
-
-    #if UNITY_EDITOR
-    private void OnEnable()
-    {
-        string[] names = Enum.GetNames(typeof(SoundType));
-        Array.Resize(ref soundList, names.Length);
-
-        for (int i = 0; i < soundList.Length; i++)
+        if (instance != null)
         {
-            soundList[i].name = names[i];
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
-    #endif
-}
 
-[Serializable]
-public struct SoundList
-{
-    public AudioClip[] Sounds { get => sounds; }
-    [HideInInspector] public string name;
-    [SerializeField] private AudioClip[] sounds;
+    public void PlaySound3D(AudioClip clip, Vector3 pos)
+    {
+        if (clip != null)
+        {
+            AudioSource.PlayClipAtPoint(clip, pos);
+        }
+    }
+
+    public void PlaySound3D(string soundName, Vector3 pos)
+    {
+        PlaySound3D(sfxLibrary.GetClipFromName(soundName), pos);
+    }
+
+    public void PlaySound2D(string soundName)
+    {
+        sfx2DSource.PlayOneShot(sfxLibrary.GetClipFromName(soundName));
+    }
 }
