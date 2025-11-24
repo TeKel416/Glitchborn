@@ -64,6 +64,11 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Start()
+    {
+        MusicManager.instance.PlayMusic("Game");
+    }
+
     private void Update()
     {
         if (rollTimer > 0f)
