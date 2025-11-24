@@ -1275,6 +1275,22 @@ MonoBehaviour:
   - groupID: Atacar
     clips:
     - {fileID: 0}
+  - groupID: Steps
+    clips:
+    - {fileID: 8300000, guid: 40b1c453cbbe4fe4b86bffa7bf2ce17f, type: 3}
+    - {fileID: 8300000, guid: 65b33bdec4c45d14b83c2d349169671f, type: 3}
+  - groupID: "Proj\xE9til"
+    clips:
+    - {fileID: 8300000, guid: 40b1c453cbbe4fe4b86bffa7bf2ce17f, type: 3}
+  - groupID: dialogo
+    clips:
+    - {fileID: 8300000, guid: 6a7caaa7d1e988646948b542d8356ef0, type: 3}
+  - groupID: MORTE
+    clips:
+    - {fileID: 8300000, guid: 6aaa2022e3d7a1e4496670c88e15df53, type: 3}
+  - groupID: 
+    clips:
+    - {fileID: 8300000, guid: 6aaa2022e3d7a1e4496670c88e15df53, type: 3}
 --- !u!1 &2105798190
 GameObject:
   m_ObjectHideFlags: 0
