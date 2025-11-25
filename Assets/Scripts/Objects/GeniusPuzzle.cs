@@ -28,6 +28,7 @@ public class GeniusPuzzle : MonoBehaviour
         for (int i = 0; i < buttons.Length; i++)
         {
             yield return new WaitForSeconds(0.5f);
+            SoundManager.instance.PlaySound3D("UI", transform.position);
             buttons[i].GetComponent<Animator>().SetBool("isOn", true);
             yield return new WaitForSeconds(timer);
             buttons[i].GetComponent<Animator>().SetBool("isOn", false);
