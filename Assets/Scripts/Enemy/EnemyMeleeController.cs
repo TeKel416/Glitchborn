@@ -3,7 +3,8 @@ using UnityEngine;
 public class EnemyMeleeController : EnemyController
 {
     public float attackRange = 1.5f;
-	public GameObject hitVFX;
+
+    public GameObject hitVFX;
 
     public override void DealDamage()
     {
@@ -12,7 +13,11 @@ public class EnemyMeleeController : EnemyController
         {
             if (hits[i].CompareTag("Player"))
             {
-                hits[i].GetComponent<PlayerController>().EnterGetHit(damage);
+                PlayerController player = hits[i].GetComponent<PlayerController>();
+                player.EnterGetHit(damage);
+
+                Vector2 direction = (player.transform.position - transform.position).normalized;
+                player.rb.linearVelocity = direction * knockbackForce;
                 Instantiate(hitVFX, attackPoint.position, attackPoint.rotation);
             }
         }

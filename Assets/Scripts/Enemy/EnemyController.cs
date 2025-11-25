@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     protected PlayerController player;
     private Rigidbody2D rb;
 
-    private enum EnemyStates { Patrol, Chase, Attack, Death }
+    private enum EnemyStates { Patrol, Idle, Chase, Attack, Death }
     private EnemyStates state = EnemyStates.Patrol;
 
     private float distance;
@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Patrol Points")]
     public Transform[] patrolPoints;
+    public float idleTimer = 3f;
     private int currentPatrolPoint = 0;
 
     [Header("Attack")]
@@ -28,10 +29,10 @@ public class EnemyController : MonoBehaviour
     public float chaseDistance = 20f;
     
     [Header("Get Hit")]
-    public float getHitDelay = 0.5f;    
+    public float getHitDelay = 0.2f;    
     public float hp = 3;
+    public float knockbackForce = 6f;
 
-    
     void Start()
     {
         player = FindFirstObjectByType<PlayerController>();
@@ -47,10 +48,15 @@ public class EnemyController : MonoBehaviour
 
         distance = Vector2.Distance(transform.position, player.transform.position);
 
+        Debug.Log(state.ToString());
+
         switch (state)
         {
             case EnemyStates.Patrol:
                 PatrolUpdate();
+            break;
+            case EnemyStates.Idle:
+                IdleUpdate();
             break;
             case EnemyStates.Chase:
                 ChaseUpdate();
@@ -73,15 +79,31 @@ public class EnemyController : MonoBehaviour
             state = EnemyStates.Chase;
         }
         else // volta a patrulhar
-        {   
+        {
+            agent.isStopped = false;
+            anim.SetBool("IsWalking", true);
             LookAtTarget(patrolPoints[currentPatrolPoint].position);
             agent.SetDestination(patrolPoints[currentPatrolPoint].position);
+
             if(Vector2.Distance(transform.position, patrolPoints[currentPatrolPoint].position) < 1f)
             {
                 currentPatrolPoint++;
                 if(currentPatrolPoint >= patrolPoints.Length) currentPatrolPoint = 0;
+                state = EnemyStates.Idle;
+                Invoke("GoPatrol", idleTimer);
             }
         }
+    }
+
+    void IdleUpdate()
+    {
+        anim.SetBool("IsWalking", false);
+        agent.isStopped = true;
+    }
+
+    private void GoPatrol()
+    {
+        state = EnemyStates.Patrol;
     }
 
     void ChaseUpdate()
@@ -95,7 +117,7 @@ public class EnemyController : MonoBehaviour
             }
             state = EnemyStates.Patrol;
         }
-        else if (distance < attackDistance) // ataca
+        else if (!locked && distance < attackDistance) // ataca
         {
             EnterAttack();
         }
@@ -146,12 +168,13 @@ public class EnemyController : MonoBehaviour
         else
         {
             Debug.Log("inimigo ai");
-            //rb.AddForce(transform.position - player.transform.position, ForceMode2D.Impulse);
+            
             anim.SetBool("IsWalking", false);
-
             //tocar animacao de hit
             locked = true;
             agent.isStopped = true;
+            Vector2 direction = (transform.position - player.transform.position).normalized;
+            agent.velocity = direction * knockbackForce;
             hp -= dealtDamage;
 
             CancelInvoke("Unlock");
@@ -175,7 +198,11 @@ public class EnemyController : MonoBehaviour
         Invoke("DealDamage", dealDamageDelay);
     }
 
-    void Unlock() => locked = false;
+    void Unlock() 
+    {
+        locked = false;
+        agent.isStopped = false;
+    } 
 
     void LookAtTarget(Vector3 lookTarget)
     {

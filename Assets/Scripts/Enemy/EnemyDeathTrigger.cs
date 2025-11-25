@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyDeathTrigger : MonoBehaviour
 {
     public List<GameObject> inimigosArea = new List<GameObject>();
+    private List<GameObject> inimigosMortos = new List<GameObject>();
     public GameObject portaEntrada;
     public GameObject portaSaida;
 
@@ -15,13 +16,13 @@ public class EnemyDeathTrigger : MonoBehaviour
 
     public void CheckEnemiesAreDead()
     {
-        if (inimigosArea.Count > 0)
+        if (inimigosMortos.Count != inimigosArea.Count)
         {
             foreach (GameObject enemy in inimigosArea)
             {
-                if (enemy.IsDestroyed())
+                if (enemy.IsDestroyed() && !inimigosMortos.Contains(enemy))
                 {
-                    inimigosArea.Remove(enemy);
+                    inimigosMortos.Add(enemy);
                 }
             }
         }

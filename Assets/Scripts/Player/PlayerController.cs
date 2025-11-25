@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Animator animator;
     public bool locked = false;
 
@@ -258,16 +258,14 @@ public class PlayerController : MonoBehaviour
     public void EnterGetHit(float dealtDamage)
     {
         GetComponent<HealthManager>().TakeDamage(hp);
-        Debug.Log("player ai");
         //tocar animacao de hit
         locked = true;
-        rb.linearVelocity = Vector2.zero;
         hp -= dealtDamage;
 
         if (hp <= 0)
         {
             Destroy(gameObject);
-            SceneLoader.LoadScene("SampleScene");
+            SceneLoader.LoadScene("Game");
         }
         
         if(onConveyorBelt) return;
