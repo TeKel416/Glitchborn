@@ -1,43 +1,28 @@
 fileFormatVersion: 2
-guid: 94e2af304c1c24643a5f0fbb2aae2d0c
+guid: 9ed9b6f47e588eb4da0ff38d7e64e464
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7928629845994636789
-    second: 16x32 Idle-Sheet_0
+      213: -55998980014482196
+    second: hurt_dakota-Sheet_0
   - first:
-      213: 5921355971262499134
-    second: 16x32 Idle-Sheet_1
+      213: 5396659513350048455
+    second: hurt_dakota-Sheet_1
   - first:
-      213: -2070692364804167524
-    second: 16x32 Idle-Sheet_2
+      213: 2028088885035600248
+    second: hurt_dakota-Sheet_2
   - first:
-      213: -7361754411933590310
-    second: 16x32 Idle-Sheet_3
+      213: 2669768493153108401
+    second: hurt_dakota-Sheet_3
   - first:
-      213: -777205059355536850
-    second: 16x32 Idle-Sheet_4
+      213: 1123092085893838854
+    second: hurt_dakota-Sheet_4
   - first:
-      213: 8767898187297278793
-    second: 16x32 Idle-Sheet_5
+      213: 4149763450849165881
+    second: hurt_dakota-Sheet_5
   - first:
-      213: -7790531046468409269
-    second: 16x32 Idle-Sheet_6
-  - first:
-      213: -1465942663341782454
-    second: 16x32 Idle-Sheet_7
-  - first:
-      213: 3281557587081426760
-    second: 16x32 Idle-Sheet_8
-  - first:
-      213: 4369888422381339503
-    second: 16x32 Idle-Sheet_9
-  - first:
-      213: 8314197429055099734
-    second: 16x32 Idle-Sheet_10
-  - first:
-      213: 486980542319370396
-    second: 16x32 Idle-Sheet_11
+      213: -6444316355881604248
+    second: hurt_dakota-Sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -142,282 +127,225 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_0
+      name: hurt_dakota-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 127
-        width: 64
-        height: 27
+        y: 1280
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5f5021656d6280e60800000000000000
-      internalID: 7928629845994636789
+      spriteID: cecd370793d093ff0800000000000000
+      internalID: -55998980014482196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_1
+      name: hurt_dakota-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1280
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca46f21c39c4ea40800000000000000
+      internalID: 5396659513350048455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurt_dakota-Sheet_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 95
-        width: 15
-        height: 27
+        y: 960
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e394db712e1ec2250800000000000000
-      internalID: 5921355971262499134
+      spriteID: 879077d7818352c10800000000000000
+      internalID: 2028088885035600248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_2
+      name: hurt_dakota-Sheet_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 95
-        width: 15
-        height: 26
+        x: 160
+        y: 960
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c98ebb4e34c6343e0800000000000000
-      internalID: -2070692364804167524
+      spriteID: 1b1cbeaac4cec0520800000000000000
+      internalID: 2669768493153108401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 95
-        width: 15
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: adc9809dd5bc5d990800000000000000
-      internalID: -7361754411933590310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 95
-        width: 15
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e221a77cd10d635f0800000000000000
-      internalID: -777205059355536850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 63
-        width: 14
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 94b45a072f4dda970800000000000000
-      internalID: 8767898187297278793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 63
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b48299b0a4972e390800000000000000
-      internalID: -7790531046468409269
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 63
-        width: 14
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4a4c622aece7abe0800000000000000
-      internalID: -1465942663341782454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_8
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 63
-        width: 14
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 847f9ff2d3f6a8d20800000000000000
-      internalID: 3281557587081426760
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 16x32 Idle-Sheet_9
+      name: hurt_dakota-Sheet_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 31
-        width: 17
-        height: 27
+        y: 640
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f63c1241e56f4ac30800000000000000
-      internalID: 4369888422381339503
+      spriteID: 60831cd3d46069f00800000000000000
+      internalID: 1123092085893838854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_10
+      name: hurt_dakota-Sheet_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 31
-        width: 49
-        height: 27
+        x: 160
+        y: 640
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6539b4fd286f16370800000000000000
-      internalID: 8314197429055099734
+      spriteID: 93283c54fdbe69930800000000000000
+      internalID: 4149763450849165881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 16x32 Idle-Sheet_11
+      name: hurt_dakota-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bef63fa603196a0800000000000000
+      internalID: -6444316355881604248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurt_dakota-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d275d2a4fca789488b2be025331bfa2
+      internalID: 2114616554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurt_dakota-Sheet_8
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 26
+        width: 160
+        height: 320
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c90297d193a12c600800000000000000
-      internalID: 486980542319370396
+      spriteID: 4789ec2b00821f0459cc07cfa001b353
+      internalID: -559438457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hurt_dakota-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e319aad95c72f704ab8d0b5307e2cf6e
+      internalID: -10835607
       vertices: []
       indices: 
       edges: []
@@ -426,7 +354,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a19f049136de89d4c9f77ee579b570ea
     internalID: 0
     vertices: []
     indices: 
@@ -434,20 +362,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":5.0},"gridSpriteSize":{"x":160.0,"y":320.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      16x32 Idle-Sheet_0: 7928629845994636789
-      16x32 Idle-Sheet_1: 5921355971262499134
-      16x32 Idle-Sheet_10: 8314197429055099734
-      16x32 Idle-Sheet_11: 486980542319370396
-      16x32 Idle-Sheet_2: -2070692364804167524
-      16x32 Idle-Sheet_3: -7361754411933590310
-      16x32 Idle-Sheet_4: -777205059355536850
-      16x32 Idle-Sheet_5: 8767898187297278793
-      16x32 Idle-Sheet_6: -7790531046468409269
-      16x32 Idle-Sheet_7: -1465942663341782454
-      16x32 Idle-Sheet_8: 3281557587081426760
-      16x32 Idle-Sheet_9: 4369888422381339503
+      hurt_dakota-Sheet_0: -55998980014482196
+      hurt_dakota-Sheet_1: 5396659513350048455
+      hurt_dakota-Sheet_2: 2028088885035600248
+      hurt_dakota-Sheet_3: 2669768493153108401
+      hurt_dakota-Sheet_4: 1123092085893838854
+      hurt_dakota-Sheet_5: 4149763450849165881
+      hurt_dakota-Sheet_6: -6444316355881604248
+      hurt_dakota-Sheet_7: 2114616554
+      hurt_dakota-Sheet_8: -559438457
+      hurt_dakota-Sheet_9: -10835607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     private int currentPatrolPoint = 0;
 
     [Header("Attack")]
-    public float attackDistance = 1.5f;
+    public float attackDistance = 1f;
     public float attackDelay = 1.0f;
     public Transform attackPoint;
     public float damage = 1;
@@ -47,8 +47,6 @@ public class EnemyController : MonoBehaviour
         if (locked || player == null) return;
 
         distance = Vector2.Distance(transform.position, player.transform.position);
-
-        Debug.Log(state.ToString());
 
         switch (state)
         {
@@ -97,8 +95,17 @@ public class EnemyController : MonoBehaviour
 
     void IdleUpdate()
     {
-        anim.SetBool("IsWalking", false);
-        agent.isStopped = true;
+        if (distance < chaseDistance) // persegue o player
+        {
+            agent.isStopped = false;
+            anim.SetBool("IsWalking", true);
+            state = EnemyStates.Chase;
+        }
+        else
+        {
+            anim.SetBool("IsWalking", false);
+            agent.isStopped = true;
+        }   
     }
 
     private void GoPatrol()
@@ -111,7 +118,7 @@ public class EnemyController : MonoBehaviour
         if (distance > chaseDistance) // volta a patrulhar
         {
             agent.isStopped = false;
-            if(agent.speed > 0f)
+            if (agent.speed > 0f)
             {
                 anim.SetBool("IsWalking", true);
             }
@@ -123,7 +130,7 @@ public class EnemyController : MonoBehaviour
         }
         else // persegue o player
         {
-            if(agent.speed > 0f)
+            if (agent.speed > 0f)
             {
                 agent.SetDestination(player.transform.position);
             }
@@ -168,10 +175,9 @@ public class EnemyController : MonoBehaviour
         else
         {
             Debug.Log("inimigo ai");
-            
+            locked = true;
             anim.SetBool("IsWalking", false);
             //tocar animacao de hit
-            locked = true;
             agent.isStopped = true;
             Vector2 direction = (transform.position - player.transform.position).normalized;
             agent.velocity = direction * knockbackForce;

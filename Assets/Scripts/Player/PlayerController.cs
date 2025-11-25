@@ -258,7 +258,7 @@ public class PlayerController : MonoBehaviour
     public void EnterGetHit(float dealtDamage)
     {
         GetComponent<HealthManager>().TakeDamage(hp);
-        //tocar animacao de hit
+        animator.SetBool("IsHurting", true);
         locked = true;
         hp -= dealtDamage;
 
@@ -268,7 +268,7 @@ public class PlayerController : MonoBehaviour
             SceneLoader.LoadScene("Game");
         }
         
-        if(onConveyorBelt) return;
+        if (onConveyorBelt) return;
         
         CancelInvoke("Unlock");
         Invoke("Unlock", getHitDelay);
@@ -393,5 +393,9 @@ public class PlayerController : MonoBehaviour
         interact = false;
     }
 
-    void Unlock() => locked = false;
+    void Unlock() 
+    {
+        animator.SetBool("IsHurting", false);
+        locked = false;
+    } 
 }
