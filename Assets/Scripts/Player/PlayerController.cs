@@ -222,7 +222,7 @@ public class PlayerController : MonoBehaviour
         if (!locked)
         {
             animator.SetBool("IsWalking", false);
-            //anim.SetTrigger("Attack");
+            animator.SetBool("IsAttacking", true);
             locked = true;
             rb.linearVelocity = Vector2.zero;
 
@@ -238,6 +238,8 @@ public class PlayerController : MonoBehaviour
 
     private void DealDamage()
     {
+        animator.SetBool("IsAttacking", false);
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
         for (int i = 0; i < hits.Length; i++)
         {
