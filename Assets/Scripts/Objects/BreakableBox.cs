@@ -18,19 +18,9 @@ public class BreakableBox : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    /*public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-// Trocar sprite quando estiver danificada
-        if (currentHealth == 1 && damagedSprite != null)
-            sr.sprite = damagedSpriteSprite;
- // Quando vida zerar → quebrar
-        if (currentHealth <= 0)
-            BreakableBox();
-    }
-    */
     public void Break()
     {
+        SoundManager.instance.PlaySound2D("BreakBox");
         Instantiate(breakEffect, transform.position, transform.rotation);
 
         if (brokenSprite != null)
@@ -38,8 +28,6 @@ public class BreakableBox : MonoBehaviour
             sr.sprite = brokenSprite;
         }
 
-        // Desativa colisão e destrói depois de um tempo
-        //GetComponent<Collider2D>().enabled = false;
         Destroy(gameObject);
     }
 }

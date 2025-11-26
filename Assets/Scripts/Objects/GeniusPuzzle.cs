@@ -62,6 +62,7 @@ public class GeniusPuzzle : MonoBehaviour
             }
             else
             {
+                SoundManager.instance.PlaySound2D("Door");
                 portaSaida.SetActive(false);
                 if (portaEntrada != null) portaEntrada.SetActive(false);
             }

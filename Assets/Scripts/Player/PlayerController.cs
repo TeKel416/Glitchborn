@@ -185,6 +185,11 @@ public class PlayerController : MonoBehaviour
         moveInput = Vector2.zero;
     }
 
+    public void PlayWalkSFX()
+    {
+        SoundManager.instance.PlaySound2D("Walk");
+    }
+
     // rolar
     private void OnRollPerformed(InputAction.CallbackContext context)
     {
@@ -208,7 +213,8 @@ public class PlayerController : MonoBehaviour
 
             locked = true;
             isRolling = true;
-            Instantiate(rollVFX, transform.position, transform.rotation);
+            Instantiate(rollVFX, transform.position, transform.rotation); // efeito visual vfx
+            SoundManager.instance.PlaySound2D("Dash");
             rollTimer = rollDuration + rollCooldown;
 
             CancelInvoke("Unlock");
@@ -221,6 +227,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!locked)
         {
+            SoundManager.instance.PlaySound2D("Attack");
             animator.SetBool("IsWalking", false);
             animator.SetBool("IsAttacking", true);
             locked = true;
@@ -257,6 +264,7 @@ public class PlayerController : MonoBehaviour
     // tomar dano
     public void EnterGetHit(float dealtDamage)
     {
+        SoundManager.instance.PlaySound2D("Hit");
         GetComponent<HealthManager>().TakeDamage(hp);
         animator.SetBool("IsHurting", true);
         locked = true;
@@ -288,6 +296,7 @@ public class PlayerController : MonoBehaviour
         }
 
         GetComponent<HealthManager>().Heal(hp);
+        SoundManager.instance.PlaySound2D("Heal");
     }
 
     // tiro
@@ -295,6 +304,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!locked)
         {
+            SoundManager.instance.PlaySound2D("Shoot");
             animator.SetBool("IsWalking", false);
             //anim.SetTrigger("Shoot");
             locked = true;

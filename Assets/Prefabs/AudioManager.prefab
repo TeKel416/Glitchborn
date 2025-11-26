@@ -41,7 +41,7 @@ AudioSource:
   m_GameObject: {fileID: 392150056491295119}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3981560469281673100, guid: d34ea02b55eb7dd41bcf714cff10656a, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
@@ -177,28 +177,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SFXLibrary
   soundEffects:
-  - groupID: Atacar
+  - groupID: Attack
     clips:
-    - {fileID: 0}
-  - groupID: Steps
+    - {fileID: 8300000, guid: 86fb15df943c1934589bd7fd907ca16e, type: 3}
+  - groupID: Walk
     clips:
     - {fileID: 8300000, guid: 40b1c453cbbe4fe4b86bffa7bf2ce17f, type: 3}
     - {fileID: 8300000, guid: 65b33bdec4c45d14b83c2d349169671f, type: 3}
-  - groupID: "Proj\xE9til"
+  - groupID: Shoot
     clips:
-    - {fileID: 8300000, guid: 40b1c453cbbe4fe4b86bffa7bf2ce17f, type: 3}
-  - groupID: dialogo
+    - {fileID: 8300000, guid: 44432b81a738aa0429396f6ef15fddf7, type: 3}
+  - groupID: Talk
     clips:
     - {fileID: 8300000, guid: 6a7caaa7d1e988646948b542d8356ef0, type: 3}
-  - groupID: MORTE
-    clips:
-    - {fileID: 8300000, guid: 6aaa2022e3d7a1e4496670c88e15df53, type: 3}
-  - groupID: 
+  - groupID: Death
     clips:
     - {fileID: 8300000, guid: 6aaa2022e3d7a1e4496670c88e15df53, type: 3}
   - groupID: UI
     clips:
     - {fileID: 8300000, guid: efb9b663b744e1142ac7cc7a2bf4e4c8, type: 3}
+  - groupID: Dash
+    clips:
+    - {fileID: 8300000, guid: 436bd32cf13bd9f4c8278a89e7b9af36, type: 3}
+  - groupID: Hit
+    clips:
+    - {fileID: 8300000, guid: f38901e16b8963b4aa73bb5590a4491e, type: 3}
+  - groupID: BreakBox
+    clips:
+    - {fileID: 8300000, guid: d48a3b82641b5de4d90bd0c7cc56bb11, type: 3}
+  - groupID: Heal
+    clips:
+    - {fileID: 8300000, guid: f2744fa9bc2121d4389b2f435dbbc455, type: 3}
+  - groupID: Door
+    clips:
+    - {fileID: 8300000, guid: 4b1cf1872ab973544b355d6426d47240, type: 3}
+  - groupID: ConveyorBelt
+    clips:
+    - {fileID: 8300000, guid: f6c63e267ecb717429dbabba12197b4d, type: 3}
 --- !u!114 &3726331984556757155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +302,7 @@ AudioSource:
   m_GameObject: {fileID: 6451070279922935287}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 6763871903773899581, guid: d34ea02b55eb7dd41bcf714cff10656a, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0

@@ -1,5 +1,4 @@
 using UnityEngine;
-using System.Collections;
 
 public class ConveyorBelt : MonoBehaviour
 {
@@ -10,10 +9,19 @@ public class ConveyorBelt : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hit)
     {
-        if(hit.CompareTag("Player"))
+        if (hit.CompareTag("Player"))
         {
+            SoundManager.instance.PlaySound2D("ConveyorBelt");
             hit.GetComponent<PlayerController>().StartCoroutine(
                 hit.GetComponent<PlayerController>().EnterConveyorBelt(direction, center.position, end.position, speed));
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D hit)
+    {
+        if (hit.CompareTag("Player"))
+        {
+            SoundManager.instance.StopSound();
         }
     }
 }

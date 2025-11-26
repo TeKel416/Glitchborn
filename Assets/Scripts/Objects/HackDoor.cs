@@ -20,6 +20,7 @@ public class HackDoor : MonoBehaviour
 
         if (playerHit && player.hack)
         {
+            SoundManager.instance.PlaySound2D("Door");
             Destroy(door);
         }
     }

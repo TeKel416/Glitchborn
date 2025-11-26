@@ -46,6 +46,7 @@ public class DialogueController : MonoBehaviour
     {
         if (!isShowing)
         {
+            SoundManager.instance.PlaySound2D("Talk");
             SceneLoader.ShowMouseCursor(true);
             dialogueObj.SetActive(true);
             sentences = txt;
@@ -67,6 +68,7 @@ public class DialogueController : MonoBehaviour
         {
             if (index < sentences.Length - 1) // verifica se ainda nao acabaram todas as falas
             {
+                SoundManager.instance.PlaySound2D("Talk");
                 index++;
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
