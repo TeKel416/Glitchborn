@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 04cbfb54f3e64414db1894d19614c475
+guid: 40302acc4a95b1543bfd1e6c2bb1cf0a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -74547414324821332
-    second: secretaria_0
+      213: -1049461823314036041
+    second: heal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 320
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: secretaria_0
+      name: heal_0
       rect:
         serializedVersion: 2
-        x: 113
-        y: 0
-        width: 212
-        height: 373
+        x: 23
+        y: 11
+        width: 146
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca2ce3a858727fef0800000000000000
-      internalID: -74547414324821332
+      spriteID: 7ba780038009f61f0800000000000000
+      internalID: -1049461823314036041
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      secretaria_0: -74547414324821332
+      heal_0: -1049461823314036041
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

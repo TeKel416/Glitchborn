@@ -160,10 +160,9 @@ public class EnemyController : MonoBehaviour
 
     void DeathUpdate()
     {
-        Debug.Log("inimigo morreu");
         anim.SetBool("IsWalking", false);
         //anim.SetTrigger("Death");
-        Destroy(gameObject, 0.2f);
+        Destroy(gameObject, 0.1f);
     }
 
     public void EnterGetHit(float dealtDamage)
@@ -174,7 +173,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            Debug.Log("inimigo ai");
+            SoundManager.instance.PlaySound2D("Hit");
             locked = true;
             anim.SetBool("IsWalking", false);
             //tocar animacao de hit

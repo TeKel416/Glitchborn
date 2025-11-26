@@ -88,6 +88,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  idleTimer: 3
   attackDistance: 1.5
   attackDelay: 1
   attackPoint: {fileID: 6522995412471975818}
@@ -96,6 +97,7 @@ MonoBehaviour:
   chaseDistance: 5
   getHitDelay: 1
   hp: 3
+  knockbackForce: 6
   attackRange: 1.5
   hitVFX: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
 --- !u!95 &7991330165084336148
@@ -204,7 +206,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 2
-  m_Acceleration: 8
+  m_Acceleration: 0
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0

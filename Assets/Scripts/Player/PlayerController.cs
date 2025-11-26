@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        transform.position = CheckpointManager.instance.GetCheckpoint().position;
         MusicManager.instance.PlayMusic("Game");
     }
 
@@ -258,6 +259,10 @@ public class PlayerController : MonoBehaviour
             {
                 hits[i].GetComponent<BreakableBox>().Break();
             }
+            else if (hits[i].CompareTag("Boss"))
+            {
+                hits[i].GetComponent<BossController>().EnterGetHit(damage);
+            }
         }
     }
 
@@ -329,6 +334,7 @@ public class PlayerController : MonoBehaviour
         CancelInvoke("DealDamage");
 
         Vector3 targetPosition = transform.position;
+
         switch(direction)
         {
             case Direction.Up:

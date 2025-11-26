@@ -14,8 +14,12 @@ public class PlayerBullet : MonoBehaviour
 		{
 			hit.GetComponent<EnemyController>().EnterGetHit(damage);
 		}
+		else if (hit.CompareTag("Boss"))
+		{
+            hit.GetComponent<BossController>().EnterGetHit(damage);
+        }
 
-		Instantiate(hitVFX, transform.position, transform.rotation);
+			Instantiate(hitVFX, transform.position, transform.rotation);
 		Destroy(gameObject);
 	}
 }
