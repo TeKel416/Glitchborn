@@ -87847,72 +87847,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7524183860831527120}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3342469141151862504
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7637674608422998977}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00b6ee05e434f674cbb804fa485b3b35, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!95 &3342469141923593100
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7637674608724960933}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00b6ee05e434f674cbb804fa485b3b35, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!95 &3342469142278711832
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7637674609414190897}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 00b6ee05e434f674cbb804fa485b3b35, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4797182706664331879
 GameObject:
   m_ObjectHideFlags: 0
@@ -88827,7 +88761,6 @@ GameObject:
   - component: {fileID: 7524183859674661920}
   - component: {fileID: 6691135845239823510}
   - component: {fileID: 8278822221808376090}
-  - component: {fileID: 3342469141151862504}
   m_Layer: 0
   m_Name: Tutorial 1
   m_TagString: Untagged
@@ -88846,7 +88779,6 @@ GameObject:
   - component: {fileID: 7524183860513501508}
   - component: {fileID: 6691135845474740722}
   - component: {fileID: 8278822222110338174}
-  - component: {fileID: 3342469141923593100}
   m_Layer: 0
   m_Name: Tutorial 3
   m_TagString: Untagged
@@ -88865,7 +88797,6 @@ GameObject:
   - component: {fileID: 7524183860831527120}
   - component: {fileID: 6691135846094141542}
   - component: {fileID: 8278822222794751466}
-  - component: {fileID: 3342469142278711832}
   m_Layer: 0
   m_Name: Tutorial 2
   m_TagString: Untagged
@@ -88988,7 +88919,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7158789844096407222, guid: 519cccaae4f239743ab1db5cc436e7fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89046,7 +88977,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7158789844096407222, guid: 519cccaae4f239743ab1db5cc436e7fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89104,7 +89035,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -7158789844096407222, guid: 519cccaae4f239743ab1db5cc436e7fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
