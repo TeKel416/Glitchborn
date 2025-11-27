@@ -1,18 +1,20 @@
-using System.Net.Sockets;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public class BossArm : MonoBehaviour
 {
     public UnityEngine.AI.NavMeshAgent agent;
     protected PlayerController player;
+    public Animator anim;
 
     public float damage = 1;
     public float dealDamageDelay = 0.25f;
 
     public float attackDistance = 1f;
     public float attackDelay = 1.0f;
-    public float knockbackForce = 6f;
+    public float knockbackForce = 7f;
+
+    public float hp = 3;
+    public float getHitDelay = 0.2f;
 
     private float distance;
     private enum EnemyStates { Chase, Attack }
@@ -102,8 +104,29 @@ public class Boss : MonoBehaviour
         }
     }
 
+    public void EnterGetHit(float dealtDamage)
+    {
+        locked = true;
+        agent.isStopped = true;
+        hp -= dealtDamage;
+
+        if (hp <= 0)
+        {
+            SoundManager.instance.PlaySound3D("Death", transform.position);
+            Destroy(gameObject);
+        }
+
+        anim.SetBool("IsHurting", true);
+        SoundManager.instance.PlaySound3D("Hit", transform.position);
+
+        CancelInvoke("Unlock");
+        Invoke("Unlock", getHitDelay);
+    }
+
     void Unlock()
     {
+        anim.SetBool("IsHurting", false);
+        agent.isStopped = false;
         locked = false;
     }
 }

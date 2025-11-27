@@ -21,7 +21,7 @@ public class BreakableBox : MonoBehaviour
     public void Break()
     {
         SoundManager.instance.PlaySound2D("BreakBox");
-        Instantiate(breakEffect, transform.position, transform.rotation);
+        GameObject vfx = Instantiate(breakEffect, transform.position, transform.rotation);
 
         if (brokenSprite != null)
         {
@@ -29,6 +29,7 @@ public class BreakableBox : MonoBehaviour
         }
 
         Destroy(gameObject);
+        Destroy(vfx, 0.3f);
     }
 }
 

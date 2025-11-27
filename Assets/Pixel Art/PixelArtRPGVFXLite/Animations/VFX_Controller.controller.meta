@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0d8897487c529164494c824e9d2cc50b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 311145
+  packageName: Pixel Art RPG VFX Lite
+  packageVersion: 1.0
+  assetPath: Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller
+  uploadId: 735461

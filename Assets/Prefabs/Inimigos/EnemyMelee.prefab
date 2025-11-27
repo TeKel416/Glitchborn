@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &411030691921772109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6522995412471975818}
-  m_Layer: 6
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6522995412471975818
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411030691921772109}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.852, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3620652192843857471}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2712683908761477321
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +17,7 @@ GameObject:
   - component: {fileID: 6169956365464428425}
   m_Layer: 6
   m_Name: EnemyMelee
-  m_TagString: Enemy
+  m_TagString: EnemyMelee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,8 +34,7 @@ Transform:
   m_LocalPosition: {x: -6.21, y: 21.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6522995412471975818}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1082154660532129775
@@ -81,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131bc57d70990264393e56628546bd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  hitVFX: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
   agent: {fileID: 7697097259522404806}
   anim: {fileID: 7991330165084336148}
   patrolPoints:
@@ -89,17 +58,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   idleTimer: 3
-  attackDistance: 1.25
-  attackDelay: 1.25
-  attackPoint: {fileID: 6522995412471975818}
-  damage: 1
-  dealDamageDelay: 0.25
   chaseDistance: 6
   getHitDelay: 1
   hp: 3
   knockbackForce: 6
-  attackRange: 1.5
-  hitVFX: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
 --- !u!95 &7991330165084336148
 Animator:
   serializedVersion: 7
@@ -179,7 +141,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -187,7 +149,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 1.59375}
+    oldSize: {x: 1.3333334, y: 1.3333334}
     newSize: {x: 0.75, y: 1.59375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -205,7 +167,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -264,7 +226,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3586477459529719684, guid: 5a6e67932a66d684594cd7ba31c6ce7d, type: 3}
+  m_Sprite: {fileID: 3737454839277146041, guid: 05cd7c4b14a757444981d7b5d03f21df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

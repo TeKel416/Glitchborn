@@ -11,7 +11,7 @@ public class EnemyBullet : MonoBehaviour
 
 	public void OnTriggerEnter2D(Collider2D hit)
 	{
-		if(hit.CompareTag("Player"))
+		if (hit.CompareTag("Player"))
 		{
             PlayerController player = hit.GetComponent<PlayerController>();
             player.EnterGetHit(damage);
@@ -20,7 +20,8 @@ public class EnemyBullet : MonoBehaviour
             player.rb.linearVelocity = direction * knockbackForce;
         }
 
-		Instantiate(hitVFX, transform.position, transform.rotation);
+        GameObject vfx = Instantiate(hitVFX, transform.position, transform.rotation);
 		Destroy(gameObject);
-	}
+        Destroy(vfx, 0.1f);
+    }
 }

@@ -1,4 +1,3 @@
-using System.Net.Sockets;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
@@ -6,6 +5,10 @@ public class BossController : MonoBehaviour
     public GameObject bossArmPrefab;
     public GameObject bracos;
     public GameObject endScreen;
+    public Animator anim;
+    public Transform[] tpPoints;
+    private int nextTpPoint = 0;
+    public Transform roomCenter;
 
     public float getHitDelay = 0.2f;
     public float hp = 12;
@@ -24,6 +27,11 @@ public class BossController : MonoBehaviour
         locked = true;
         hp -= dealtDamage;
         VerifyHp();
+        anim.SetBool("IsHurting", true);
+        SoundManager.instance.PlaySound3D("Glitch", transform.position);
+
+        CancelInvoke("Teleport");
+        Invoke("Teleport", getHitDelay);
 
         CancelInvoke("Unlock");
         Invoke("Unlock", getHitDelay);
@@ -31,34 +39,40 @@ public class BossController : MonoBehaviour
 
     private void VerifyHp()
     {
-        if (hp == 9)
+        if (hp >= 5)
         {
-            GameObject bossArm = Instantiate(bossArmPrefab, transform.position, transform.rotation, bracos.transform);
-            Vector2 direction = (player.transform.position - transform.position).normalized;
-            player.rb.linearVelocity = direction * knockbackForce;
+            SpawnArm();
+
+        } 
+        else if (hp < 5)
+        {
+            SpawnArm();
+            Invoke("SpawnArm", 0.5f);
         }
-        if (hp == 6)
+        else if (hp <= 0)
         {
-            GameObject bossArm = Instantiate(bossArmPrefab, transform.position, transform.rotation, bracos.transform);
-            Vector2 direction = (player.transform.position - transform.position).normalized;
-            player.rb.linearVelocity = direction * knockbackForce;
-        }
-        else if (hp == 3)
-        {
-            GameObject bossArm = Instantiate(bossArmPrefab, transform.position, transform.rotation, bracos.transform);
-            Vector2 direction = (player.transform.position - transform.position).normalized;
-            player.rb.linearVelocity = direction * knockbackForce;
-        }
-        else if (hp == 0)
-        {
+            SoundManager.instance.PlaySound2D("Death");
             Destroy(bracos);
             Destroy(gameObject);
             endScreen.SetActive(true);
         }
     }
 
+    private void SpawnArm()
+    {
+        GameObject bossArm = Instantiate(bossArmPrefab, roomCenter.position, roomCenter.rotation, bracos.transform);
+    }
+
+    private void Teleport()
+    {
+        transform.position = tpPoints[nextTpPoint].position;
+        nextTpPoint++;
+        if (nextTpPoint >= tpPoints.Length) nextTpPoint = 0;
+    }
+
     void Unlock()
     {
+        anim.SetBool("IsHurting", false);
         locked = false;
     }
 }

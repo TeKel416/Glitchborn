@@ -153,4 +153,4 @@ MonoBehaviour:
   health: 3
   damagedSprite: {fileID: 0}
   brokenSprite: {fileID: 0}
-  breakEffect: {fileID: 2433282508537954060, guid: 3ef3ae421f71c5c4e97fe12dc2fc6312, type: 3}
+  breakEffect: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}

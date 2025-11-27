@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1591612486820092193}
   m_Layer: 6
   m_Name: EnemyRanged
-  m_TagString: Enemy
+  m_TagString: EnemyShooter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,20 +50,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 927bd899f6353a74ca64ff30d91ba33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooterController
+  bulletPrefab: {fileID: 6563586966519812166, guid: 58c3efaf887f7e341a93c06f0ce1abc3, type: 3}
+  bulletSpeed: 10
   agent: {fileID: 3091631838086064807}
   anim: {fileID: 8227604820805656157}
-  patrolPoints:
-  - {fileID: 1061676396623169940}
   attackDistance: 8
   attackDelay: 2
   attackPoint: {fileID: 8731521656549241722}
   damage: 1
   dealDamageDelay: 0.25
-  chaseDistance: 20
   getHitDelay: 1
   hp: 3
-  bulletPrefab: {fileID: 6563586966519812166, guid: 58c3efaf887f7e341a93c06f0ce1abc3, type: 3}
-  bulletSpeed: 10
+  knockbackForce: 6
 --- !u!195 &3091631838086064807
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -73,7 +71,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 2369922911868767342}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1
   m_Speed: 0
   m_Acceleration: 8
   avoidancePriority: 50
@@ -82,7 +80,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 1
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -96,7 +94,7 @@ Animator:
   m_GameObject: {fileID: 2369922911868767342}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 41fb6ddba6635894a8ca04f22bd73e5f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8c18972cebdf30c4dafd43903b4782ee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -169,17 +167,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.024049044}
+  m_Offset: {x: -0.004552901, y: -0.07611275}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.75, y: 1.59375}
+    oldSize: {x: 1.25, y: 1.25}
     newSize: {x: 0.75, y: 1.59375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.625277}
+  m_Size: {x: 1.336914, y: 1.2792549}
   m_EdgeRadius: 0
 --- !u!212 &1591612486820092193
 SpriteRenderer:
@@ -228,8 +226,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3586477459529719684, guid: 5a6e67932a66d684594cd7ba31c6ce7d, type: 3}
-  m_Color: {r: 0.030838378, g: 0.22014791, b: 0.5943396, a: 1}
+  m_Sprite: {fileID: -1075810945217082326, guid: d72ad31ffc16bfa4f9850ff506fcbea3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -264,7 +262,7 @@ Transform:
   m_GameObject: {fileID: 6777044428491108011}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.852, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

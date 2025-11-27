@@ -81,25 +81,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c71342f6c93c2344494f1d769a3949e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 8821091521999849450}
   locked: 0
   hp: 8
   getHitDelay: 0.3
   speed: 5
   rollDuration: 0.25
   rollCooldown: 0.45
-  rollCooldownIndicator: {fileID: 0}
   isRolling: 0
-  attackRange: 3
+  attackRange: 2
   attackDelay: 0.45
   attackPoint: {fileID: 7369191177514228175}
   damage: 1
   dealDamageDelay: 0.25
-  interact: 0
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 6563586966519812166, guid: 58bebb3c0d2db7147adbd740f69309df, type: 3}
   bulletSpeed: 30
   shootDelay: 0.5
+  hack: 0
+  interact: 0
   hitVFX: {fileID: 6710139492206580332, guid: 95b8d3d65b5d7f1409c4ed1723887826, type: 3}
-  rollVFX: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b, type: 3}
+  rollVFX: {fileID: 1967835574231978638, guid: 3e196c9e632c76841a71cb6e2dc6d010, type: 3}
   moveAction: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   rollAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   attackAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
@@ -167,12 +168,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 52b7b6c3d31bcd849a5a310330d4cab5, type: 3}
+  m_Sprite: {fileID: -7158789844096407222, guid: 519cccaae4f239743ab1db5cc436e7fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -216,8 +217,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 1}
+    newSize: {x: 0.5, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0

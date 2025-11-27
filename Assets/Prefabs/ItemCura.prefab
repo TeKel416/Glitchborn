@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4951847255449861995}
   - component: {fileID: 9108289471380872986}
   - component: {fileID: 3665879149078417214}
-  - component: {fileID: 8079807384154190494}
+  - component: {fileID: 1246922742858101643}
   m_Layer: 0
   m_Name: ItemCura
   m_TagString: Untagged
@@ -140,8 +140,8 @@ MonoBehaviour:
       m_Calls: []
   destroyOnTriggerEnter2D: 1
   destroyOnTriggerExit2D: 0
---- !u!70 &8079807384154190494
-CapsuleCollider2D:
+--- !u!58 &1246922742858101643
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,5 +175,4 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_Radius: 0.43

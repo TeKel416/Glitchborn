@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     [Header("Roll / Dodge")]
     public float rollDuration;
     public float rollCooldown;
-    public Image rollCooldownIndicator;
 
     private Vector2 rollDirection;
     private Vector2 lastMoveDir;
@@ -74,7 +73,6 @@ public class PlayerController : MonoBehaviour
     {
         if (rollTimer > 0f)
         {
-            //rollCooldownIndicator.fillAmount = rollTimer / 100f;
             rollTimer -= Time.deltaTime;
             
             if (isRolling && rollTimer <= rollCooldown)
@@ -214,7 +212,8 @@ public class PlayerController : MonoBehaviour
 
             locked = true;
             isRolling = true;
-            Instantiate(rollVFX, transform.position, transform.rotation); // efeito visual vfx
+            GameObject vfx = Instantiate(rollVFX, transform.position, transform.rotation); // efeito visual vfx
+            Destroy(vfx, 0.3f);
             SoundManager.instance.PlaySound2D("Dash");
             rollTimer = rollDuration + rollCooldown;
 
@@ -251,9 +250,13 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
         for (int i = 0; i < hits.Length; i++)
         {
-            if (hits[i].CompareTag("Enemy"))
+            if (hits[i].CompareTag("EnemyMelee"))
             {
-                hits[i].GetComponent<EnemyController>().EnterGetHit(damage);
+                hits[i].GetComponent<EnemyMeleeController>().EnterGetHit(damage);
+            }
+            else if (hits[i].CompareTag("EnemyShooter"))
+            {
+                hits[i].GetComponent<EnemyShooterController>().EnterGetHit(damage);
             }
             else if (hits[i].CompareTag("BreakableBox"))
             {
@@ -262,6 +265,10 @@ public class PlayerController : MonoBehaviour
             else if (hits[i].CompareTag("Boss"))
             {
                 hits[i].GetComponent<BossController>().EnterGetHit(damage);
+            }
+            else if (hits[i].CompareTag("BossArm"))
+            {
+                hits[i].GetComponent<BossArm>().EnterGetHit(damage);
             }
         }
     }

@@ -10,16 +10,26 @@ public class PlayerBullet : MonoBehaviour
 
 	public void OnTriggerEnter2D(Collider2D hit)
 	{
-		if (hit.CompareTag("Enemy"))
+		if (hit.CompareTag("EnemyMelee"))
 		{
-			hit.GetComponent<EnemyController>().EnterGetHit(damage);
+			hit.GetComponent<EnemyMeleeController>().EnterGetHit(damage);
 		}
-		else if (hit.CompareTag("Boss"))
+        else if (hit.CompareTag("EnemyShooter"))
+        {
+            hit.GetComponent<EnemyShooterController>().EnterGetHit(damage);
+
+        }
+        else if (hit.CompareTag("Boss"))
 		{
             hit.GetComponent<BossController>().EnterGetHit(damage);
+
+        } else if (hit.CompareTag("BossArm"))
+		{
+            hit.GetComponent<BossArm>().EnterGetHit(damage);
         }
 
-			Instantiate(hitVFX, transform.position, transform.rotation);
+		GameObject vfx = Instantiate(hitVFX, transform.position, transform.rotation);
 		Destroy(gameObject);
-	}
+        Destroy(vfx, 0.1f);
+    }
 }

@@ -4,10 +4,12 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Enemy
   - FxTemporaire
   - BreakableBox
   - Boss
+  - BossArm
+  - EnemyMelee
+  - EnemyShooter
   layers:
   - Default
   - TransparentFX

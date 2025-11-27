@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 43802425896c7d740b1938f67a1478e5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 311145
+  packageName: Pixel Art RPG VFX Lite
+  packageVersion: 1.0
+  assetPath: Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim
+  uploadId: 735461
