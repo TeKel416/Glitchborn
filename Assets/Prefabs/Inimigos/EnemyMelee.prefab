@@ -89,12 +89,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   idleTimer: 3
-  attackDistance: 1.5
-  attackDelay: 1
+  attackDistance: 1.25
+  attackDelay: 1.25
   attackPoint: {fileID: 6522995412471975818}
   damage: 1
   dealDamageDelay: 0.25
-  chaseDistance: 5
+  chaseDistance: 6
   getHitDelay: 1
   hp: 3
   knockbackForce: 6
@@ -206,7 +206,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 2
-  m_Acceleration: 0
+  m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
