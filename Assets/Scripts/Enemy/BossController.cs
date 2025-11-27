@@ -5,6 +5,7 @@ public class BossController : MonoBehaviour
 {
     public GameObject bossArmPrefab;
     public GameObject bracos;
+    public GameObject endScreen;
 
     public float getHitDelay = 0.2f;
     public float hp = 12;
@@ -52,6 +53,7 @@ public class BossController : MonoBehaviour
         {
             Destroy(bracos);
             Destroy(gameObject);
+            endScreen.SetActive(true);
         }
     }
 
