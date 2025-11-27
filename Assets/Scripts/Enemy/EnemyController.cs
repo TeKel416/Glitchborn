@@ -83,10 +83,11 @@ public class EnemyController : MonoBehaviour
             LookAtTarget(patrolPoints[currentPatrolPoint].position);
             agent.SetDestination(patrolPoints[currentPatrolPoint].position);
 
-            if(Vector2.Distance(transform.position, patrolPoints[currentPatrolPoint].position) < 1f)
+            if (Vector2.Distance(transform.position, patrolPoints[currentPatrolPoint].position) < 1f)
             {
                 currentPatrolPoint++;
-                if(currentPatrolPoint >= patrolPoints.Length) currentPatrolPoint = 0;
+                if (currentPatrolPoint >= patrolPoints.Length) currentPatrolPoint = 0;
+                if (currentPatrolPoint >= patrolPoints.Length) currentPatrolPoint = 0;
                 state = EnemyStates.Idle;
                 Invoke("GoPatrol", idleTimer);
             }
@@ -118,10 +119,7 @@ public class EnemyController : MonoBehaviour
         if (distance > chaseDistance) // volta a patrulhar
         {
             agent.isStopped = false;
-            if (agent.speed > 0f)
-            {
-                anim.SetBool("IsWalking", true);
-            }
+            anim.SetBool("IsWalking", true);
             state = EnemyStates.Patrol;
         }
         else if (!locked && distance < attackDistance) // ataca
@@ -133,6 +131,7 @@ public class EnemyController : MonoBehaviour
             if (agent.speed > 0f)
             {
                 agent.SetDestination(player.transform.position);
+                anim.SetBool("IsWalking", true);
             }
             LookAtTarget(player.transform.position);
         }
