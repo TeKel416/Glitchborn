@@ -161,13 +161,13 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = context.ReadValue<Vector2>();
 
-        // Arredonda para o inteiro mais próximo (-1, 0, 1) para o Blend Tree
+        // Arredonda para o inteiro mais prï¿½ximo (-1, 0, 1) para o Blend Tree
         Vector2 animationInput = new Vector2(
             Mathf.Round(moveInput.x),
             Mathf.Round(moveInput.y)
         );
 
-        // Se o input não for zero, armazena a versão arredondada para a animação
+        // Se o input nï¿½o for zero, armazena a versï¿½o arredondada para a animaï¿½ï¿½o
         if (animationInput.sqrMagnitude > 0f)
         {
             lastMoveDir = animationInput; // lastMoveDir agora armazena (-1, 0, 1)
@@ -325,8 +325,16 @@ public class PlayerController : MonoBehaviour
     }
 
     // esteira
+    private Coroutine lastConveyorCoroutine;
     private bool onConveyorBelt = false;
-    public IEnumerator EnterConveyorBelt(Direction direction, Vector3 center, Vector3 end, float conveyorSpeed)
+
+    public void EnterConveyorBelt(Direction direction, Collider2D col, float conveyorSpeed)
+    {
+        if(lastConveyorCoroutine != null) StopCoroutine(lastConveyorCoroutine);
+        lastConveyorCoroutine = StartCoroutine(ConveyorCoroutine(direction, col, conveyorSpeed));
+    }
+
+    private IEnumerator ConveyorCoroutine(Direction direction, Collider2D col, float conveyorSpeed)
     {
         onConveyorBelt = true;
         locked = true;
@@ -334,14 +342,15 @@ public class PlayerController : MonoBehaviour
         CancelInvoke("DealDamage");
 
         Vector3 targetPosition = transform.position;
+        float extraDist = 1f;
 
         switch(direction)
         {
             case Direction.Up:
-                while(transform.position.y < end.y)
+                while(transform.position.y < col.bounds.max.y + extraDist)
                 {
-                    if(transform.position.x > center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
-                    else if(transform.position.x < center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
+                    if(transform.position.x > col.bounds.center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.x < col.bounds.center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
 
                     targetPosition.y += Time.deltaTime * conveyorSpeed;
                     transform.position = targetPosition;
@@ -349,10 +358,10 @@ public class PlayerController : MonoBehaviour
                 }
             break;
             case Direction.Down:
-                while(transform.position.y > end.y)
+                while(transform.position.y > col.bounds.min.y - extraDist)
                 {            
-                    if(transform.position.x > center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
-                    else if(transform.position.x < center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
+                    if(transform.position.x > col.bounds.center.x + 0.05f) targetPosition.x -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.x < col.bounds.center.x - 0.05f) targetPosition.x += Time.deltaTime * conveyorSpeed;
 
                     targetPosition.y -= Time.deltaTime * conveyorSpeed;
                     transform.position = targetPosition;
@@ -360,10 +369,10 @@ public class PlayerController : MonoBehaviour
                 }
             break;
             case Direction.Right:
-                while(transform.position.x < end.x)
+                while(transform.position.x < col.bounds.max.x + extraDist)
                 {
-                    if(transform.position.y > center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
-                    else if(transform.position.y < center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
+                    if(transform.position.y > col.bounds.center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.y < col.bounds.center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
 
                     targetPosition.x += Time.deltaTime * conveyorSpeed;
                     transform.position = targetPosition;
@@ -371,10 +380,10 @@ public class PlayerController : MonoBehaviour
                 }
             break;
             case Direction.Left:
-                while(transform.position.x > end.x)
+                while(transform.position.x > col.bounds.min.x - extraDist)
                 {
-                    if(transform.position.y > center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
-                    else if(transform.position.y < center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
+                    if(transform.position.y > col.bounds.center.y + 0.05f) targetPosition.y -= Time.deltaTime * conveyorSpeed;
+                    else if(transform.position.y < col.bounds.center.y - 0.05f) targetPosition.y += Time.deltaTime * conveyorSpeed;
 
                     targetPosition.x -= Time.deltaTime * conveyorSpeed;
                     transform.position = targetPosition;

@@ -4,16 +4,16 @@ public class ConveyorBelt : MonoBehaviour
 {
     public float speed = 10;
     public Direction direction = Direction.Right;
-    public Transform center;
-    public Transform end;
+
+    private Collider2D col;
+    void Start() => col = GetComponent<Collider2D>();
 
     void OnTriggerEnter2D(Collider2D hit)
     {
         if (hit.CompareTag("Player"))
         {
             SoundManager.instance.PlaySound2D("ConveyorBelt");
-            hit.GetComponent<PlayerController>().StartCoroutine(
-                hit.GetComponent<PlayerController>().EnterConveyorBelt(direction, center.position, end.position, speed));
+            hit.GetComponent<PlayerController>().EnterConveyorBelt(direction, col, speed);
         }
     }
 
